@@ -1,0 +1,321 @@
+@import "~themes/public.less";
+.pad {
+  padding: @padding-32;
+}
+.open {
+  display: block;
+  font-size: 14px;
+  color: #4AACF7;
+  cursor: pointer;
+  //margin-bottom: 20px;
+  //margin-top: 20px;
+  i{
+    font-size: 10px;
+    margin-left: 8px;
+  }
+}
+
+.tabbar{
+  background: #fff;
+  padding: 12px;
+  overflow: hidden;
+  button{
+    margin-right: 64px;
+    float: right;
+    padding: 0 52px;
+  }
+}
+.split{
+  height: 32px;
+  line-height: 32px;
+  background: @backColor-select;
+  //margin-bottom: 25px;
+  padding-left: 15px;
+  font-size: @fs-14;
+  color: @fc-common;
+}
+
+:global{
+  .client-upload{
+    .ant-upload.ant-upload-select.ant-upload-select-picture-card{
+      border: 1px solid #E1E1E6;
+      background: #fff;
+      width: 80px;
+      height: 80px;
+    }
+    .ant-upload-list-picture-card .ant-upload-list-item{
+      width: 80px;
+      height: 80px;
+    }
+    i{
+      color: #ccc;
+      font-size: 17px;
+    }
+  }
+  .addClient{
+    overflow: hidden;
+    .ant-form-item{
+      margin-bottom: 22px;
+    }
+  }
+}
+.car{
+  display: flex;
+  flex-wrap: wrap;
+}
+.carBox{
+  position: relative;
+  margin-right: 26px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width:290px;
+  height:112px;
+  background:rgba(255,255,255,1);
+  border:1px solid rgba(74, 172, 247, 1);
+  display: flex;
+  color: #4AACF7;
+  overflow: hidden;
+  &:hover{
+    .action{
+      transform: translateY(0);
+    }
+  }
+  .btn{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    i{
+      margin-right: 8px;
+      margin-top: 3px;
+    }
+  }
+  .carItem{
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    .imgBox{
+      width:76px;
+      height:76px;
+      background:rgba(255,255,255,1);
+      border:1px solid rgba(230, 230, 230, 1);
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+      img{
+        margin: auto;
+        width: 100%;
+      }
+    }
+    .plate{
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .carName{
+      color: #333;
+      font-size: 14px;
+    }
+  }
+  .action{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background:rgba(0,0,0,1);
+    opacity:0.85;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    transform: translateY(-100%);
+    span{
+      color: #fff;
+      margin-right: 20px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.selectTip{
+  display: flex;
+  margin-top: 16px;
+  .signList{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  span{
+    color: #333
+  }
+  .item{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 9px;
+    justify-content: space-between;
+    border: 1px solid #4AACF7;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    span:first-child{
+      margin-right: 10px;
+    }
+    span:last-child{
+      color: #BFBFBF;
+      font-size: 10px;
+      transform: scale(.8);
+      cursor: pointer;
+      margin-top: 3px;
+    }
+  }
+}
+
+.import {
+  padding: 32px;
+  height: 100%;
+  .tit {
+    margin-bottom: 30px;
+    >span {
+      color: #666;
+      font-weight: bold;
+    }
+    div {
+      text-align: right;
+      button {
+        margin-left: 24px;
+        width: 120px;
+      }
+    }
+  }
+  .content {
+    height: 600px;
+    overflow: auto;
+    .item {
+      margin-bottom: 30px;
+      border: 1px solid #E5F4FF;
+      padding: 24px 32px;
+      &:hover {
+        box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.03);
+      }
+      img {
+        margin-right: 48px;
+      }
+      .name {
+        width: 200px;
+        span {
+          text-align: left;
+          color: #CCCCCC;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          &:nth-child(1) {
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #999;
+            b {
+              color: #4AACF7;
+            }
+          }
+        }
+      }
+      .buttons {
+        width: 120px;
+        text-align: right;
+        button {
+          width: 120px;
+          margin-left: 10px;
+        }
+      }
+      .ing, .success {
+        color: #F9A123;
+        i {
+          color: #fff;
+          display: inline-block;
+          font-size: 12px;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background: #F9A123;
+          &::before {
+            position: relative;
+            top: -1px;
+            left: 2px;
+          }
+        }
+      }
+      .success {
+        color: #24C02F;
+        i {
+          background: #24C02F;
+          line-height: 20px !important;
+        }
+      }
+      .done {
+        span {
+          font-size: 12px; 
+            b {
+              font-size: 45px;
+              color: #333;
+              margin-right: 8px;
+            }
+          &:nth-child(1) {
+            margin-right: 60px;
+          }
+          &:nth-child(2) {
+            b {
+              color: #FE2150;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+:global{
+  .pigeon_client_tag{
+    font-style: normal;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    font-size: 14px;
+    height: 18px;
+  }
+  .pigeon_client_tag_one {
+    width: 38px;
+    background: #FF6F28;
+    margin-right: 6px;
+  }
+  .pigeon_client_tag_two {
+    width: 52px;
+    background: #FF6F28;
+  }
+}
+:global{
+  .az_remove_button_margin.madalDiv {
+    .ant-modal-content .ant-modal-body .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns .ant-btn-primary {
+      margin-left: 0px!important; 
+      width: 120px;
+      height: 40px;
+    }
+  }
+  .az_close{
+    .ant-modal-close {
+      display: block !important;
+      top: 0px !important;
+      right: 10px !important;
+    }
+  } 
+  .az_remove_button_margin.ant-modal {
+    top: 50%!important;
+    margin-top: -175px;
+  }
+}

@@ -1,0 +1,43 @@
+@import "~themes/public";
+
+.card{
+  width: 100%;
+  max-height: 150px;
+  padding: 10px;
+  border: @bc-dashed-tip;
+  overflow: scroll;
+  .cardName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    span:nth-child(1){
+      font-size: @fs-20;
+    }
+    span:nth-child(2){
+      font-size: @fs-14;
+    }
+  }
+  .cardPhone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    span{
+      font-size: @fs-14;
+    }
+  }
+  .cardPrice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    span{
+      font-size: @fs-14;
+    }
+  }
+}
+.checkboxGroup{
+  display: flex !important;
+  flex-direction: column !important;
+}

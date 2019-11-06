@@ -1,0 +1,471 @@
+@import "~themes/public";
+
+.zl_addClassHeader {
+  height: 104px;
+  // background-color: pink;
+  padding-top: 32px;
+  margin-left: 32px;
+  padding-left: 32px;
+}
+
+.zl_ButtonLeft {
+  float: right;
+  height: 40px;
+  overflow: hidden;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+.zl_showClass {
+  display: inline-block;
+  width: 24px;
+  height: 40px;
+  background: rgba(74,172,247,0);
+  border: 1px solid rgba(225, 225, 230, 1);
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-left: -24px;
+}
+
+.activeBg{
+  display: inline-block;
+  width: 24px;
+  height: 40px;
+  background: #4AACF7;
+  border: 1px solid rgba(225, 225, 230, 1);
+  vertical-align: middle;
+  margin-top: -1px;
+  margin-left: -24px;
+  svg{
+    color: #fff;
+  }
+}
+
+.zl_showClassButton {
+  display: inline-block;
+  vertical-align: middle;
+  //   background-color: pink;
+  transition: transform .5s;
+  transform: translateX(0);
+  margin-top: -4px;
+  height: 40px;
+  span{
+    margin-top: -1px;
+  }
+}
+
+.zl_hiddenClassButton {
+  height: 40px;
+  vertical-align: middle;
+  margin-top: -2px;
+  transition: transform .5s;
+  transform: translateX(100%);
+  // display: none;
+  display: inline-block;
+}
+
+.zl_mast {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 10000;
+}
+
+.zl_mast_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 1100px;
+  height: 690px;
+  background: #fff;
+
+}
+
+.zl_headerP {
+  padding-left: 32px;
+  padding-right: 32px;
+  background: rgba(242,242,242,1);
+  height: 50px;
+  color: #333;
+  line-height: 50px;
+}
+
+.zl_mast_sectionone {
+  height: 120px;
+  img {
+    float: left;
+  }
+
+  .zl_rightBox {
+
+    margin-left: 32px;
+    float: left;
+
+    p {
+      padding: 0;
+      margin: 0;
+      color: #999;
+      font-size: 14px;
+    }
+
+    p:nth-child(1) {
+      height: 20px;
+      font-size: 20px;
+      font-family: MicrosoftYaHei-Bold;
+      font-weight: bold;
+      color: rgba(51,51,51,1);
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.zl_mast_sectionTwo {
+  overflow: hidden;
+  margin-bottom: 70px;
+  .zl_boxItem{
+    width: 324px;
+    height: 400px;
+    background: rgba(245,248,252,1);
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    margin-right: 32px;
+
+    img {
+      margin-top: 81px;
+      margin-left: 0;
+      margin-bottom: 58px;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    p:nth-child(2) {
+      height: 20px;
+      font-size: 20px;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
+      color: rgba(51,51,51,1);
+      margin-bottom: 20px;
+    }
+
+    p:nth-child(3) {
+      color: #999;
+      font-size: 14px;
+    }
+  }
+  .zl_boxItem:nth-child(3){
+    margin-right: 0px;
+  }
+
+}
+
+.zl_mast_contentTwo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 1100px;
+  height: 860px;
+  background: #fff;
+}
+
+.zl_imageStep {
+  padding-top: 20px;
+  padding-left: 32px;
+
+  p {
+    height: 32px;
+    margin-bottom: 0;
+  }
+
+  img {
+    margin-right: 24px;
+  }
+}
+
+.zl_SymbolCirle {
+  width: 32px;
+  height: 32px;
+  background: rgba(255,255,255,1);
+  border: 1px solid rgba(153,153,153,1);
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.zl_R_content {
+  height: 600px;
+  // background-color: pink;
+  overflow-x: hidden;
+
+  img {
+    width: 64px;
+    height: 64px;
+    margin-right: 12px;
+  }
+}
+
+.zl_R_Button {
+  // float: left;
+  overflow: hidden;
+}
+
+.zl_R_Item {
+  width: 266px;
+  height: 112px;
+  background: rgba(255,255,255,1);
+  border: 1px solid rgba(242,242,242,1);
+  float: left;
+  padding-left: 20px;
+  padding-top: 24px;
+  margin-bottom: 32px;
+
+  span {
+    font-size: 16px;
+    font-family: MicrosoftYaHei-Bold;
+    font-weight: bold;
+    color: rgba(51,51,51,1);
+    line-height: 64px;
+    margin-right: 10px;
+  }
+}
+
+.zl_cc_content {
+  overflow: hidden;
+
+  div {
+    width: 110px;
+    height: 80px;
+    background: rgba(255,255,255,1);
+    border: 1px solid rgba(225, 225, 230, 1);
+    text-align: center;
+    float: left;
+    line-height: 80px;
+    font-size: 14px;
+    margin-bottom: 22px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(51,51,51,1);
+  }
+}
+
+.zl_M_box {
+  overflow: hidden;
+
+  .zl_M_boxItem {
+    width: 217px;
+    height: 80px;
+    background: rgba(255,255,255,1);
+    border: 1px solid rgba(225, 225, 230, 1);
+    padding-top: 10px;
+    padding-left: 24px;
+    float: left;
+    margin-right: 32px;
+    margin-bottom: 32px;
+
+    span {
+      font-size: 14px;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
+      color: rgba(51,51,51,1);
+      margin-left: 20px;
+    }
+  }
+
+  div:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+.zl_arrange_class {
+  background: rgba(255,255,255,1);
+  padding-left: 32px;
+  clear: both;
+  // overflow: hidden;
+  position: relative;
+  padding-top: 19px;
+  margin-top: -15px;
+  border: 1px solid rgba(221,221,221,1);
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+  padding-bottom: 30px;
+
+  p {
+    height: 60px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  > div {
+    width: 150px;
+    height: 80px;
+    background: rgba(255,255,255,1);
+    border: 1px solid rgba(225, 225, 230, 1);
+    line-height: 80px;
+    text-align: center;
+    float: left;
+    margin-right: 100px;
+  }
+}
+
+.zl_M_3 {
+  width: 0;
+  height: 0;
+  border-width: 0 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent rgba(221,221,221,1);
+  /*透明 透明  灰*/
+  position: absolute;
+  left: 40px;
+  top: -10px;
+  z-index: 10000;
+}
+
+.zl_M_4 {
+  width: 0;
+  height: 0;
+  border-width: 0 9px 9px;
+  border-style: solid;
+  border-color: transparent transparent #fff;
+  /*透明 透明  灰*/
+  position: absolute;
+  left: 41px;
+  top: -9px;
+  z-index: 10001;
+}
+
+.zl_arrange_SelectBOX {
+  width: 150px!important;
+  height: 80px!important;
+  background: rgba(74,172,247,0.2)!important;
+  border: 1px solid rgba(74, 172, 247, 1)!important;
+}
+
+.zl_tableContent {
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+}
+
+.zl_tableContent_l {
+  width: 89px;
+}
+
+.zl_tableContent_R {
+  flex: 1;
+  overflow-x: auto;
+  //  background-color: pink;
+}
+
+.zl__tableHeader {
+  width: 89px!important;
+  height: 56px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  background: rgba(242,246,250,1);
+  box-shadow: 0 -1px 0 0 rgba(242,242,242,1);
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(0,0,0,1);
+}
+
+.zl_tableNoneC {
+  height: 56px;
+  text-align: center;
+  position: relative;
+  line-height: 56px;
+  width: 89px;
+  cursor: pointer;
+  border-right: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.zl_tableNoneC2 {
+  height: 56px;
+  text-align: center;
+  position: relative;
+  width: 89px;
+  line-height: 18px;
+  padding-top: 10px;
+  cursor: pointer;
+  border-right: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.zl_tableNoneC:hover {
+  background-color: #eee;
+}
+
+.zl_class_line {
+  height: 56px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 3px;
+}
+
+.zl_divstyle{
+  :global{
+    .ant-modal-content{
+      min-height: 600px !important;
+      min-width: 1105px !important;
+    }
+    .ant-modal-header{
+      padding-bottom: 0px !important;
+    }
+  }
+}
+
+.progressDiv {
+  position: relative;
+  padding-left: 20px;
+  margin-left: 30px;
+  border-left: 1px dashed #c0c4cc;
+}
+
+.em{
+  width: 24px;
+  line-height: 24px;
+  height: 24px;
+  background: white;
+  border: 1px solid #303133;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  left:-13px;
+}
+
+.no_progressDiv{
+  position: relative;
+  padding-left: 20px;
+  margin-left: 30px;
+}
+.zl_staffnameSpan{
+   cursor: pointer;
+}  
+.help{
+  position: fixed;
+  top: 80px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #4AACF7;
+  i{
+    margin-right: 8px;
+  }
+}

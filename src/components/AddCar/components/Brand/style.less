@@ -1,0 +1,231 @@
+@import "~themes/public.less";
+
+:global{
+  #letterList{
+    position: relative;
+    .ant-popover{
+      left: 0!important;
+      right: 0!important;
+      padding-top: 3px;
+    }
+    .ant-popover-inner-content{
+      padding: 0;
+    }
+    .ant-popover-arrow{
+      display: none;
+    }
+    .ant-popover-open:after{
+      content: ' ';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border: 1px solid #E1E1E6;
+      border-bottom: none;
+      border-right: none;
+      transform: translateX(-50%) rotate(45deg);
+      position: absolute;
+      left: 50%;
+      bottom: -11px;
+      z-index: 1031;
+    }
+  }
+}
+.back{
+  color: #4AACF7;
+  margin-bottom: 41px;
+  cursor: pointer;
+  font-size: 14px;
+  i{
+    margin-right: 5px;
+  }
+}
+.search{
+  width: 290px;
+  margin-bottom: 23px;
+}
+.searchBar{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+.tip{
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 29px;
+  span:last-child{
+    cursor: pointer;
+    color: #4AACF7;
+    font-weight: bold;
+  }
+}
+.letterList{
+  flex: 1;
+  span{
+    cursor: pointer;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #E1E1E6;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    color: #333;
+    position: relative;
+    &:hover{
+      color: #fff;
+      background: #4AACF7;
+    }
+  }
+  .active{
+    color: #fff;
+    background: #4AACF7;
+  }
+}
+.brandList{
+  height:385px;
+  border:1px solid rgba(230, 230, 230, 1);
+  overflow-y: auto;
+}
+.brandListItem{
+  display: flex;
+  div{
+    padding: 22px;
+  }
+  div:nth-child(1){
+    box-sizing: border-box;
+    width: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-top: none;
+    span{
+      display: inline-block;
+      margin-top: 5px;
+      color: #333;
+      text-align: center;
+    }
+  }
+  div:nth-child(2){
+    padding: 32px 0 6px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e6e6e6;
+    span{
+      cursor: pointer;
+      box-sizing: border-box;
+      display: inline-block;
+      width:33.33%;
+      padding: 0 17px;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      margin-bottom: 26px;
+      color: #4AACF7;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+.carImg{
+  width: 62px;
+  height: 62px;
+  margin-top: 0!important;
+  display: flex!important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 100%;
+    margin: auto;
+  }
+}
+.brandActive{
+  border-color: #4AACF7!important;
+}
+.popBrandList{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16.66%;
+    padding: 13px 0;
+    &:hover{
+      background: #EDF3F7;
+    }
+    span{
+      width: 70px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      border: none;
+      margin: 0;
+      &:hover{
+        background: #EDF3F7;
+        color: #333;
+      }
+    }
+  }
+}
+.popCarImg{
+  width: 100%;
+  img{
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.searchBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.selectTip{
+  display: flex;
+  //align-items: center;
+  //flex-wrap: wrap;
+  margin-top: 16px;
+  .signList{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  span{
+    color: #333
+  }
+  .item{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 9px;
+    justify-content: space-between;
+    border: 1px solid #4AACF7;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    span:first-child{
+      margin-right: 10px;
+    }
+    span:last-child{
+      color: #BFBFBF;
+      font-size: 10px;
+      transform: scale(.8);
+      cursor: pointer;
+      margin-top: 3px;
+    }
+  }
+}

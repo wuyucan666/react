@@ -1,0 +1,22 @@
+@import "../../themes/public.less";
+
+.title{
+  ::before{
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 14px;
+    background: @fc-blue;
+    position: relative;
+    left: -10px;
+  }
+  border-bottom: 1px solid #F2F2F2;
+  padding-bottom: 8px;
+  margin-bottom: 40px;
+  span{
+    font-size: 16px;
+    color: @fc-common;
+    font-weight: bold;
+    margin-left: 12px;
+  }
+}

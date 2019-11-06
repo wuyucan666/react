@@ -1,0 +1,192 @@
+@import "~themes/public.less";
+
+.tableHead{
+  margin-top: 30px;
+  height:40px;
+  line-height: 40px;
+  background:rgba(242,242,242,1);
+  box-shadow:0px -1px 0px 0px rgba(242,242,242,1);
+  span{
+    display: inline-block;
+    padding: 0 17px;
+    color: #000;
+    &:nth-child(1){
+      width: 28%;
+    }
+    &:nth-child(2){
+      width: 10%;
+    }
+    &:nth-child(3){
+      width: 12%;
+    }
+    &:nth-child(4){
+      width: 16%;
+    }
+    &:nth-child(5){
+      width: 20%;
+    }
+    &:nth-child(6){
+      width: 14%;
+    }
+  }
+}
+.tableBody{
+  //max-height: 450px;
+  //overflow-y: scroll;
+  .project{
+    margin-top: 25px;
+    border: 1px solid #f2f2f2;
+    &:last-child{
+      margin-bottom: 25px;
+    }
+  }
+  .projectHead{
+    height:40px;
+    background:rgba(242,246,250,1);
+    box-shadow:0px -1px 0px 0px rgba(242,242,242,1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    div{
+      display: flex;
+      align-items: center;
+    }
+    span{
+      display: inline-block;
+    }
+  }
+  .classify{
+    width:38px;
+    height:26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+  }
+  .speedy{
+    background:rgba(36,192,47,1);
+  }
+  .normal{
+    background:rgba(74,172,247,1);
+  }
+  .imgBox{
+    width: 26px;
+    height: 26px;
+    margin: 0 8px 0 16px;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    background: #fff;
+  }
+  img {
+    width: 100%;
+    margin: auto;
+  }
+  .plate{
+    color: #333;
+  }
+  .infoItem{
+    padding-left: 8px;
+    margin-left: 7px;
+    position: relative;
+    &:before{
+      content: ' ';
+      width: 1px;
+      height: 12px;
+      background: #CCE9FF;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .no{
+    color: #CCCCCC;
+    margin-right: 15px;
+  }
+  .projectInfo{
+    display: flex;
+    min-height: 77px;
+    box-sizing: border-box;
+    .infoBox{
+      &:nth-child(1){
+        flex: 1;
+      }
+      &:nth-child(2){
+        width: 20%;
+        padding: 18px 17px;
+        border: 1px solid #F2F2F2;
+        border-top: none;
+        border-bottom: none;
+      }
+      &:nth-child(3){
+        width: 16%;
+        padding: 12px 0 0 11px;
+      }
+    }
+    .projectItem{
+      color: #666;
+      display: flex;
+      padding: 18px 0;
+      border-bottom: 1px solid #F2F2F2;
+      &:last-child{
+        border: none;
+      }
+      .name{
+        flex: 1;
+        padding: 0 17px;
+      }
+      .num{
+        width: 10%;
+        padding: 0 17px;
+      }
+      .price{
+        width: 13%;
+        padding: 0 17px;
+      }
+      .sales{
+        width: 23%;
+        padding: 0 17px;
+      }
+      .review{
+        width: 13%;
+        padding: 0 17px;
+        color: #4AACF7;
+        cursor: pointer;
+      }
+      .carName{
+        display: inline-block;
+        color: #ccc;
+        position: relative;
+        padding: 0 8px;
+        &:before{
+          content: ' ';
+          display: inline-block;
+          width:2px;
+          height:12px;
+          background:rgba(204,204,204,1);
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .total{
+      color: #FF6F28;
+      font-weight: bold;
+    }
+    .payType{
+      font-size: 12px;
+      color: #999;
+    }
+    .action{
+      display: inline-block;
+      color: #4AACF7;
+      font-size: 14px;
+      cursor: pointer;
+      &:first-child{
+        margin-right: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.searchBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addBtn{
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  button{
+    margin-right: 24px;
+  }
+}
+.espInput350 {
+  // width: 350px!important;
+  display: block;
+  height: 40px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  // align-items: center;
+}
+.addTable{
+  padding:0 32px;
+}
+#del{
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    background: #4AACF7;
+    color: #fff;
+  }
+}
+.fixBtn {
+  padding: 12px 62px;
+  background: #fff;
+  button {
+    width: 88px;
+    &:nth-child(2){
+      margin: 0 16px;
+    }
+  }
+}
+.flexLeft{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.flexFormItem{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  margin-right: 32px;
+  &:last-child{
+    margin-right: 0;
+    flex: 1;
+  }
+}
+
+:global{
+  .flexRemark{
+    .ant-form-item-control-wrapper{
+      width: 100%;
+    }
+  }
+  .numberAddon{
+    display: inline-block;
+    background: #ebf2f9;
+    padding: 0 11px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    border-left: none;
+  }
+  .from-wrap-margin{
+    .from-wrap-margin-bottom{
+      .ant-form-item{
+        margin-bottom: 0!important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .flexFormItem{
+    margin-right: 16px;
+  }
+  .fixBtn {
+    padding: 12px 31px;
+  }
+}
+.select_provider{
+  :global{
+    .ant-table-tbody > tr > td:nth-child(1){
+      border-right: none;
+    }
+  }
+}
+.wyc_supplier{
+  height: 40px;
+  :global{
+    .ant-select-selection--single{
+      height: 40px;
+    }
+    .ant-select-selection__rendered{
+      line-height: 40px;
+      height: 40px;
+    }
+  }
+}

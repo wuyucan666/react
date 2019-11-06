@@ -1,0 +1,46 @@
+.carBox{
+  max-height: 400px;
+  overflow-y: scroll;
+  padding: 0 24px 0;
+  :global{
+    .plate{
+      .ant-input-group-addon{
+        padding: 0;
+        background: #fff!important;
+        position: relative;
+        &:after{
+          content: ' ';
+          width: 1px;
+          background: #E1E1E6;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          bottom: 0;
+        }
+      }
+    }
+    .ant-form-item{
+      margin-top: 40px;
+      margin-bottom: 0;
+      &:first-child{
+        margin-top: 24px;
+      }
+    }
+    .client-upload{
+      .ant-upload.ant-upload-select.ant-upload-select-picture-card{
+        border: 1px solid #E1E1E6;
+        background: #fff;
+        width: 80px;
+        height: 80px;
+      }
+      .ant-upload-list-picture-card .ant-upload-list-item{
+        width: 80px;
+        height: 80px;
+      }
+      i{
+        color: #ccc;
+        font-size: 17px;
+      }
+    }
+  }
+}

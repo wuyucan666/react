@@ -1,0 +1,82 @@
+@import "~themes/public";
+.cardpaywrap{
+	padding:32px 0 0 32px;
+}
+.cardpay{
+  border:@bc-default;
+  height:112px;
+  display: flex;
+  width:269px;
+  float: left;
+  margin:0 32px 32px 0;
+  position: relative;
+  cursor: pointer;
+  .cardoutlined{
+  	color:#4AACF7;
+  	width: 45px;
+	height:45px;
+	position: absolute;
+	top:0;
+	right:0;
+	i{
+		font-size: 45px;
+		line-height: 45px;
+	}
+  }
+  >div{
+  	flex:1;
+  	position: relative;
+  	&.bflex{
+  		flex:110px 0 0;
+  		position: relative;
+  		>div{
+  			position: absolute;
+  			width:64px;
+  			height:64px;
+  			border-radius: 50%;
+  			background: #1FC2CC;
+  			top:50%;
+  			left:50%;
+  			transform: translateX(-50%) translateY(-50%);
+  			&.hh{
+	  			background: #FFC000;
+	  		}
+	  		&.xj{
+	  			background: #FFC000;
+	  		}
+	  		&.wx{
+	  			background: #41B035;
+	  		}
+	  		&.zf{
+	  			background: #4AACF7;
+	  		}
+  		}
+  		i{
+  			font-size: 64px;
+  			line-height: 64px;
+  			color:#fff;
+  		}
+  	}
+  	p{
+  		color:@fc-common;
+  		font-size: @fs-16;
+  		font-weight: bold;
+  		margin-bottom: 0;
+  	}
+  	.paytxt{
+  		position: absolute;
+  		top:50px;
+  		left:0;
+  		transform: translateY(-50%);
+  	}
+  	.inputw96{
+  		width:96px;
+  		color:@fc-key;
+  		margin-top: 10px;
+  	}
+  	.pendPay{
+  		color: #4AACF7;
+  		margin-top: 10px;
+  	}
+  }
+}

@@ -1,0 +1,136 @@
+:global {
+  .settlementTypeTable {
+    .ant-table-thead > tr > th {
+      border-right: 1px solid #E6E9ED;
+    }
+
+    .ant-table-thead > tr > th {
+      border-bottom: 1px solid #E6E9ED;
+    }
+
+    .ant-table-thead > tr:not(:last-child) > th {
+      border-bottom: 1px solid #E6E9ED;
+    }
+  }
+}
+
+.settlementWrap {
+  padding: 60px 32px;
+
+  .settlementTop {
+    padding-bottom: 60px;
+  }
+
+  .settlementButton {
+    width: 80px;
+    margin-right: 24px;
+  }
+
+  .head {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #F2F2F2;
+    color: #333333;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 28px;
+
+    > div {
+      height: 14px;
+      width: 4px;
+      background: #4AACF7;
+      position: absolute;
+      top: 9px;
+      left: 0;
+    }
+
+    > span {
+      padding-left: 14px;
+    }
+  }
+
+  .dataBox {
+    display: flex;
+    height: 392px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 60px;
+
+    .title {
+      height: 56px;
+      background: #F2F2F2;
+      padding-left: 17px;
+      color: #333;
+    }
+
+    .dataBoxFirst {
+      flex: 498px 0 0;
+
+      .dataCirBox {
+        margin-top: 58px;
+      }
+
+      .title {
+        line-height: 56px;
+      }
+
+      .circleBox {
+        margin: 58px 0 0 141px;
+        height: 220px;
+        width: 220px;
+        background: #e5e5e5;
+        border-radius: 50%;
+        position: relative;
+
+        .circleXBox {
+          height: 166px;
+          width: 166px;
+          position: absolute;
+          border-radius: 50%;
+          background: #fff;
+          top: 27px;
+          left: 27px;
+        }
+      }
+    }
+
+    .dataBoxTwo {
+      border-left: 1px solid #F2F2F2;
+      flex: 1;
+
+      .title {
+        border-bottom: 1px solid #F2F2F2FF;
+        display: flex;
+
+        > div {
+          flex: 1;
+          display: flex;
+          align-items: center;
+
+          > span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #1890FF;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .cont {
+        height: 334px;
+        overflow: hidden;
+        overflow-y: auto;
+
+        .title {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+.contMarketing {
+  width: 100%;
+}

@@ -1,0 +1,82 @@
+.wrap {
+  padding-top: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  :global {
+    .add-btn-group {
+      margin: 20px 0;
+      .item {
+        margin-right: 32px;
+        button {
+          color: #75c8ff;
+          background-color: #fff;
+          border-color: #75c8ff;
+        }
+      }
+    }
+  }
+}
+
+.detail {
+  min-height: 400px;
+  padding-top: 32px;
+  position: relative;
+  :global {
+    .back-select-tip {
+      position: absolute;
+      right: 0;
+      top: -49px;
+      cursor: pointer;
+    }
+    .ant-input {
+      width: 100px;
+    }
+
+    .ant-table .ant-table-thead > tr > th {
+      text-align: left !important;
+    }
+    .ant-table .ant-table-tbody > tr > td {
+      text-align: left !important;
+    }
+    h3 {
+      font-size: 14px;
+      margin-top: 24px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+      li {
+        list-style: none;
+        line-height: 2;
+        .title {
+          color: #999;
+        }
+        .content {
+          color: #333;
+        }
+      }
+    }
+    .btn-group {
+      margin-top: 10px;
+      button {
+        margin-right: 10px;
+        padding: 0 40px;
+      }
+    }
+  }
+}
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  :global {
+    .delete-btn {
+      cursor: pointer;
+    }
+  }
+}

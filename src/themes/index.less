@@ -1,0 +1,408 @@
+@import "~themes/vars.less";
+@import "~themes/public";
+
+body {
+  height: 100%;
+  overflow-y: hidden;
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+:global {
+  /* 全局的右边盒子最小宽度 */
+  #mainContainer {
+    min-width: 1250px;
+    overflow: hidden;
+  }
+
+  /**
+  fix: 表格底部的input遮挡表格按钮呼出的下拉菜单
+  将input的定位属性去掉
+  */
+  .ant-pagination-options-quick-jumper input {
+    position: inherit;
+  }
+
+  .radio-green {
+    //红点
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #10e21a;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 8px;
+      position: relative;
+      top: -2px;
+    }
+  }
+  .radio-red {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #ff4646;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 8px;
+      position: relative;
+      top: -2px;
+    }
+  }
+  .ant-input-number-handler-wrap {
+    //隐藏全局数字输入框上下键
+    display: none;
+  }
+  .additional-project {
+    .ant-modal-footer {
+      text-align: left;
+
+      button:nth-child(1) {
+        margin-left: 105px;
+      }
+    }
+  }
+
+  .unit-footer-button {
+    .ant-modal-footer {
+      text-align: left;
+
+      button:nth-child(1) {
+        margin-left: 114px;
+      }
+    }
+  }
+
+  .warehouse-footer-button {
+    .ant-modal-footer {
+      text-align: left;
+
+      button:nth-child(1) {
+        margin-left: 97px;
+      }
+    }
+  }
+  .car-modal {
+    .ant-modal-body {
+      padding-top: 0 !important;
+    }
+    .ant-tabs-nav .ant-tabs-tab {
+      padding-top: 0;
+    }
+  }
+  .storecategory-footer-button {
+    .ant-modal-footer {
+      text-align: left;
+
+      button:nth-child(1) {
+        margin-left: 95px;
+      }
+    }
+  }
+
+  .ant-modal-footer {
+    //全局弹窗底部button统一样式
+    .ant-btn {
+      min-width: 88px;
+      height: 40px;
+    }
+  }
+
+  .from-wrap-margin {
+    padding-bottom: 20px;
+  }
+
+  .additional-wrap {
+    padding-bottom: 0;
+  }
+
+  .from-wrap-margin .ant-form-item {
+    margin-bottom: 40px !important;
+  }
+
+  .from-wrap-margin .from-wrap-remark {
+    margin-bottom: 0 !important;
+  }
+
+  .disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+  }
+  /**
+   * 头部span的字体颜色
+   * @type {[type]}
+   */
+  .topSpanColor {
+    color: @fc-common;
+  }
+
+  .ant-layout-footer {
+    background: #f2f6fa;
+  }
+  /**
+   * flex 工具函数
+   * @type {[type]}
+   */
+
+  .flex {
+    display: flex;
+
+    &.center {
+      align-items: center;
+      justify-content: center;
+    }
+
+    &.top {
+      align-items: flex-start;
+    }
+
+    &.bottom {
+      align-items: flex-end;
+    }
+
+    &.left {
+      justify-content: flex-start;
+    }
+
+    &.right {
+      justify-content: flex-end;
+    }
+
+    &.between {
+      justify-content: space-between;
+    }
+
+    &.column {
+      flex-direction: column;
+    }
+
+    .item {
+      flex: 1;
+    }
+  }
+
+  .ant-menu-submenu-title {
+    height: 50px !important;
+    line-height: 50px !important;
+  }
+  // .ant-menu-submenu > .ant-menu {
+  //   // width: 185px;
+  //   // padding-left: 20px;
+  // }
+  /**
+   * message 样式
+   * @type {[type]}
+   */
+  .ant-message-notice-content {
+    .btn {
+      color: @fc-blue;
+      cursor: pointer;
+      margin: 0 6px;
+    }
+  }
+  /**
+   * 清楚浮动
+   * @type {[type]}
+   */
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .clearfix {
+    zoom: 1;
+  }
+  /**
+   * 字体溢出变。。。
+   * @type {[type]}
+   */
+  .text-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .has-error .ant-form-explain,
+  .has-error .ant-form-split {
+    color: #ff6f28 !important;
+  }
+
+  .has-error .ant-input,
+  .has-error .ant-input:hover {
+    border-color: #ff6f28 !important;
+  }
+
+  .ant-form-item-required:before {
+    color: #ff6f28 !important;
+  }
+
+  .ant-btn,
+  .ant-input,
+  .ant-input-group-addon {
+    border-radius: 0;
+  }
+
+  .ant-input-group-addon {
+    background-color: #ebf2f9 !important;
+  }
+
+  .Header__header___1yd5U {
+    height: 64px;
+  }
+
+  .ant-breadcrumb {
+    & > span {
+      &:last-child {
+        color: #999;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .Layout__bread___2TBC2 {
+    margin-bottom: 32px;
+  }
+
+  .Header__header___1yd5U .Header__rightWarpper___EMn3w {
+    padding-right: 32px;
+  }
+
+  .ant-breadcrumb-link {
+    .anticon + span {
+      margin-left: 4px;
+    }
+  }
+
+  // 让table组件具有定位基础
+  .ant-table-wrapper {
+    position: relative;
+
+    .ant-spin-container,
+    .ant-spin-nested-loading {
+      position: initial;
+    }
+  }
+
+  .ant-table {
+    .ant-table-thead > tr > th {
+      text-align: left;
+    }
+
+    .ant-table-tbody > tr > td {
+      text-align: left;
+    }
+
+    &.ant-table-small {
+      .ant-table-thead > tr > th {
+        background: #f7f7f7;
+      }
+
+      .ant-table-body > table {
+        padding: 0;
+      }
+    }
+  }
+
+  .ant-table-pagination {
+    display: table;
+    //margin: 16px auto !important;
+    margin: 24px 0 0 !important;
+  }
+
+  .ant-popover-inner {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(100, 100, 100, 0.2);
+  }
+
+  .vertical-center-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ant-modal {
+      top: 0;
+
+      .ant-modal-body {
+        max-height: 80vh;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .ant-form-item-control {
+    vertical-align: middle;
+  }
+
+  .ant-modal-mask {
+    background-color: rgba(55, 55, 55, 0.2);
+  }
+
+  .ant-modal-content {
+    box-shadow: none;
+    //padding-bottom: 32px;
+  }
+
+  .ant-select-dropdown-menu-item {
+    padding: 12px 16px !important;
+  }
+
+  .margin-right {
+    margin-right: 16px;
+  }
+
+  a:focus {
+    text-decoration: none;
+  }
+  .introduce-modal{
+    .ant-modal-content{
+      padding-bottom: 0;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  :global {
+    .ant-col-xl-48 {
+      width: 20%;
+    }
+
+    .ant-col-xl-96 {
+      width: 40%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  :global {
+    .ant-pagination-item,
+    .ant-pagination-next,
+    .ant-pagination-options,
+    .ant-pagination-prev {
+      margin-bottom: 8px;
+    }
+
+    .ant-card {
+      .ant-card-head {
+        padding: 0 12px;
+      }
+
+      .ant-card-body {
+        padding: 12px;
+      }
+    }
+  }
+}
+

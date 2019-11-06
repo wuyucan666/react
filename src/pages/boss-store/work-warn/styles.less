@@ -1,0 +1,47 @@
+@import "~themes/public.less";
+.lyc_addproject{
+ .modalHeader{
+     display: flex;
+     margin-bottom: 12px;
+ }
+
+}
+.treeHeader{
+    background: #fafafa;
+    color:#333333;
+    border-bottom: 1px solid #f4f4f4;
+    height:43px;
+    line-height: 43px;
+    background: rgba(242,246,250,1);
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+.modalTable{
+    :global{
+        .ant-table-thead > tr > th{
+        padding: 0 0 0 16px;
+        height: 20px;
+        color:#333333;
+        background: rgba(242,246,250,1);
+        border-bottom: 1px solid #f4f4f4;
+        }
+        .ant-table-selection-colunm{
+            padding-right: 0;
+            background: red;
+        }
+        tr td:nth-child(1){
+            padding: 0 0 0 16px !important;
+        }
+        .ant-table-placeholder{
+          border-bottom: none;
+        }
+        
+    }
+}
+.modal{
+    :global{
+        .ant-form-item{
+            margin-bottom: 0px;
+        }
+    }
+}

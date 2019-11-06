@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+      "themes/*": ["themes/*"],
+      "components/*": ["components/*"],
+      "utils/*": ["utils/*"],
+      "config": ["utils/config.js"],
+      "menus/*": ["utils/menus/*"],
+      "services/*": ["services/*"],
+      "models/*": ["models/*"],
+      "routes/*": ["routes/*"]
+    },
+    "target": "ES6",
+    "module": "commonjs",
+    // "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}

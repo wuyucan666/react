@@ -1,0 +1,101 @@
+@import "~themes/public.less";
+:global{
+    .sevice_message_select{
+        .ant-select-selection__rendered{
+            margin-left: 40px;
+        }
+    }
+    .sevice_message_textarea{
+        height:200px!important;
+        padding:12px;
+    }
+    .sevice_message_modal{
+        .ant-modal-content{
+            padding-bottom:0;
+        }
+    }
+    .delete_modal{
+        .ant-modal-header{
+          padding:15px 32px!important;
+        }
+        .ant-modal-content{
+          padding-bottom:0;
+        }
+        .ant-btn{
+          width: 164px!important;
+        }
+        .ant-modal-footer{
+          text-align: center;
+        }
+    }
+}
+.sevice_message_flex{
+    display: flex;
+    >div{
+        margin-right:24px;
+    }
+}
+.chooes_goods{
+    width:285px;
+    height:40px;
+    line-height: 40px;
+    color:#fff;
+    padding:0 12px;
+    background:#78C3FD;
+    position: relative;
+    .close_circle{
+        position: absolute;
+        top:12px;
+        right:12px;
+        color:#E5E5E5;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+.sevice_message_h{
+    margin:30px 0 10px 0;
+    color:#333333;
+}
+.s_message_select{
+    position: relative;
+    .s_message_icon{
+        position: absolute;
+        left: 10px;
+        top:10px;
+        font-size: 18px !important;
+        color:#CCCCCC;
+    }
+}
+.s_message_textarea{
+    position: relative;
+    .s_message_txt{
+        position: absolute;
+        bottom: 12px;
+        right:12px;
+        color:#CCCCCC;
+    }
+}
+.s_message_del_w{
+    padding-top:1px;
+    .s_message_del_t{
+        width:62px;
+        height:62px;
+        background:#ED4646;
+        border-radius: 50%;
+        margin:94px auto 24px auto;
+        border:1px solid #ED4646;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >span{
+            color:#fff;
+            font-size: 30px;
+        }
+    }
+    .s_message_del_txt{
+        color:#333333;
+        font-size: 22px;
+        margin-bottom:74px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,115 @@
+.labels{
+  padding: 32px 32px 0;
+}
+.empty{
+  margin-top: 119px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+    width: 343px;
+  }
+  div{
+    margin: 45px 0 18px;
+  }
+}
+.action{
+  span{
+    color: #999;
+    cursor: pointer;
+    &:first-child{
+      margin-right: 24px;
+    }
+  }
+}
+:global{
+  .ant-modal-content{
+  padding-bottom: 1px;
+  }
+}
+.modalBtn{
+  margin: 40px 0 30px 75px;
+  overflow: hidden;
+  clear: both;
+  button{
+    width: 88px;
+    float: right;
+    &:first-child{
+      margin-left: 24px;
+    }
+  }
+}
+.labelBox{
+  display: flex;
+  align-items: center;
+  .label{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 15px;
+    min-width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 8px;
+    background: #91C8F2;
+    color: #fff;
+    overflow: hidden;
+    &:hover{
+      .ac{
+        transform: translateY(0);
+      }
+    }
+    .ac{
+      transition: all 0.3s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background:rgba(0,0,0,1);
+      opacity:0.85;
+      transform: translateY(-100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      span:hover{
+        text-decoration:underline;
+      }
+      span:nth-child(2){
+        width: 1px;
+        background: #fff;
+        height: 20px;
+        margin: 0 4px;
+      }
+    }
+  }
+  .disabled{
+    background: #e5e5e5!important;
+    cursor: not-allowed;
+    &:hover{
+      .ac{
+        transform: translateY(-100%)!important;
+      }
+    }
+  }
+}
+.add{
+  margin-top: -3px;
+  cursor: pointer;
+  font-weight: bold;
+  min-width: auto;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  color:#4AACF7;
+  border: 1px dashed #4AACF7;
+  &:hover{
+    color: #91C8F2;
+    border-color: #91C8F2;
+  }
+}

@@ -1,0 +1,70 @@
+.wrap {
+  width: 100%;
+  min-height: 400px;
+  padding: 0 32px;
+  :global {
+    .grid {
+      padding-top: 32px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 32px;
+      grid-row-gap: 32px;
+      box-sizing: border-box;
+    }
+    .pay-icon {
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 64px;
+      text-align: center;
+      background: #4aacf7;
+      width: 64px;
+      height: 64px;
+      border-radius: 32px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .pay-item {
+      height: 112px;
+      border: 1px solid #f2f2f2;
+      padding-left: 24px;
+      cursor: pointer;
+      &.active {
+        border: 1px solid #4aacf7;
+        position: relative;
+        .checked-icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+      img.main-img {
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+      }
+      h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-bottom: 0;
+      }
+    }
+
+    .ant-btn {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .ant-input {
+      width: 70px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    span.value {
+      color: #4aacf7;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+}

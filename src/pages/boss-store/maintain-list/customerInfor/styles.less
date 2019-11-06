@@ -1,0 +1,95 @@
+.customBack{
+  position: fixed;
+  top:56px;
+  bottom:0;
+  z-index: 8;
+  transition: left 0.3s;
+  right:0;
+  background: #f2f6fa;
+  .listOne{
+    display: flex;
+    width: 100%;
+    height:60px;
+    // background:rgba(255,255,255,1);
+    padding-left: 32px;
+    padding-right: 32px;
+    span{
+      line-height: 60px;
+    }
+    span:nth-child(1){
+      font-size:14px;
+      font-family:MicrosoftYaHei-Bold;
+      font-weight:bold;
+      color:#999999;
+      flex: 1;
+    }
+    span:nth-child(2){
+      font-size:14px;
+      font-family:MicrosoftYaHei-Bold;
+      font-weight:normal;
+      color:rgba(74,172,247,1);
+      i{
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .tabpagediv{
+    // position: relative;
+    .yc_backdiv{
+      position: relative;
+      margin: 0;
+      padding: 0;
+      .yc_back{
+        position: absolute;
+        top: 11px;
+        right: 64px;
+        z-index: 100;
+        .yc_backbtn{
+          width: 120px;
+          height: 36px;
+          background: #4AACF7;
+          text-align: center;
+          line-height: 36px;
+          color: #fff;
+          font-size:14px;
+          font-family:MicrosoftYaHei;
+          font-weight:400;
+          box-sizing: border-box;
+          i{
+            width:7px;
+            height:12px;
+            margin-right: 8px;
+            font-size: 12px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+
+
+    :global{
+      .ant-tabs-bar{
+        width: 100%;
+        // height: 56px;
+        background: #fff;
+        margin: 0 0 32px 0;
+        padding: 8px 32px;
+        box-sizing: border-box;
+        line-height: 56px;
+      }
+      .ant-tabs{
+        padding: 0 32px;
+      }
+      .ant-tabs-nav-scroll{
+        background:white;
+      }
+      .ant-tabs-tabpane-active{
+        background:white;
+        //height: 700px;
+        //overflow-y: scroll;
+      }
+    }
+  }
+}

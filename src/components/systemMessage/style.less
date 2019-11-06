@@ -1,0 +1,111 @@
+.zl_messageBox{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    // background-color: pink;
+}
+.zl_M_head{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    span{
+        float: right;
+        cursor: pointer;
+    }
+}
+.zl_M_Content{
+    position: absolute;
+    top:50px;
+    left:0px;
+    right: 0px;
+  
+    bottom:0;
+    overflow-y: auto;
+    .zl_item_box:hover{
+        background-color: #F0F5FA;
+       
+    }
+    .zl_item_box{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .zl_M_Item{
+        height: 80px;
+        position: relative;
+        border-bottom: 1px solid rgba(242,242,242,1); 
+        cursor: pointer;
+        .zl_span{
+            position: absolute;
+            top:-7px;
+            right:0;
+            font-size:12px;
+            font-family:MicrosoftYaHei;
+            font-weight:400;
+            color:rgba(153,153,153,1);
+        }
+        .zl_Icon{
+            float: left;
+            height: 100%;
+            width: 32px;
+            margin-right: 12px;
+            i{
+                width: 32px;
+                margin-top: 6px;
+                height: 32px;
+                font-size: 32px;
+                display: inline-block;
+            }
+        }
+        .zl_text{
+            float: left;
+            p:nth-child(1){
+                height: 46px;
+                line-height: 46px;
+                font-size:14px;
+                font-family:MicrosoftYaHei-Bold;
+                font-weight:bold;
+                color:rgba(51,51,51,1);
+                padding: 0;margin: 0;
+            }
+            p:nth-child(2){
+                padding: 0;margin: 0;
+                height: 12px;
+                line-height: 12px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(153,153,153,1);
+            }
+
+        }
+    }
+}
+.zl_M_Content::-webkit-scrollbar{
+    display: none;
+}
+.zl_noMore{
+    height: 78px;
+    line-height: 78px;
+    font-size:12px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    text-align: center;
+}
+.zl_addTile{
+    font-size:12px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    margin-left: 20px;
+}
+.zl_itemDetail{
+    padding-top: 30px;
+    padding-left: 30px;
+    height: 504px;
+    overflow: auto;
+    border:1px solid rgba(242,242,242,1);
+    box-sizing: border-box; 
+    margin-top: -30px;
+}

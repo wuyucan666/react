@@ -1,0 +1,45 @@
+.tableDiv{
+	border: 1px solid #E1E1E6;
+	margin-bottom: 20px;
+	&>div:nth-child(1){
+		background: #F2F6FA;
+		display: flex;
+		color: #333333;
+		height: 56px;
+		line-height: 56px;
+		&>div:nth-child(1){
+			flex: 2;
+			text-indent: 30px;
+		}
+		&>div:nth-child(2){
+			flex: 1;	
+		}
+		&>div:nth-child(3){
+			flex: 1;
+		}
+	}
+	&>div{
+		display: flex;
+		height: 56px;
+		line-height: 56px;
+		&>div:nth-child(1){
+			flex: 2;
+			text-indent: 30px;
+			color: #666666;
+		}
+		&>div:nth-child(2){
+			flex: 1;
+			color: #666666;	
+		}
+		&>div:nth-child(3){
+			flex: 1;
+			color: #4AACF7;
+			input{
+				width: 80px;
+			}
+		}
+	}
+	&>div:hover {
+		background: #F2F6FA;
+	}
+}

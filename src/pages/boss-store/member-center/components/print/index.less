@@ -1,0 +1,165 @@
+.icon {
+	width: 88px;
+	height: 88px;
+	background: #1cc00b;
+	color: #fff;
+	border-radius: 88px;
+	margin: 0 auto;
+	i {
+		font-size: 28px;
+	}
+}
+
+.content {
+	font-size: 14px;
+	color: #000;
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+.btns {
+	padding: 50px 0 32px;
+	:global {
+		.ant-btn {
+			width: 120px;
+			margin: 0 10px;
+		}
+	}
+}
+
+.printContent {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 10000;
+	padding: 0 2em;
+	font-weight: bold;
+	color: #000;
+	font-family: 黑体, 宋体;
+	:global {
+		@media print {
+			@page {
+				margin: 0;
+			}
+		}
+
+		div {
+			box-sizing: border-box;
+			font-size: 18px;
+		}
+		.title {
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+			color: #000;
+			margin-top: 50px;
+			line-height: 1;
+		}
+		.table-header {
+			border: 1px solid #000;
+			height: 50px;
+			margin-top: 10px;
+			> .item {
+				border-right: 1px solid #000;
+				&:last-child {
+					border-right: none;
+				}
+			}
+			.label {
+				width: 150px;
+				padding-left: 20px;
+			}
+		}
+		.table {
+			width: 100%;
+			border: 1px solid #000;
+			border-top: none;
+			thead {
+				td {
+					font-size: 16px;
+					height: 50px;
+					border-bottom: 1px solid #000;
+					font-weight: bold;
+					padding-left: 20px;
+				}
+			}
+			tbody {
+				td {
+					height: 80px;
+					padding-left: 20px;
+				}
+			}
+		}
+		.service {
+			border: 1px solid #000;
+			border-top: none;
+			.title {
+				margin: 0;
+				border: 1px solid #000;
+				> .item {
+					padding: 30px 0;
+				}
+			}
+		}
+		.money-info {
+			border: 1px solid #000;
+			border-top: none;
+			padding: 20px 20px;
+			// height: 100px;
+			> div {
+				width: 100%;
+			}
+			.label {
+				width: 100px;
+			}
+			.money {
+				width: 200px;
+				font-weight: bold;
+				&.max {
+					font-weight: normal;
+				}
+			}
+		}
+		.remark {
+			border: 1px solid #000;
+      border-top: none;
+      padding: 20px;
+			.label {
+				width: 100px;
+			}
+		}
+		.service-info {
+			padding: 0 20px;
+			border: 1px solid #000;
+			border-top: none;
+			> .flex {
+				height: 60px;
+			}
+			.label {
+				width: 100px;
+			}
+		}
+		.signature {
+			padding: 20px 0 0;
+			> .item {
+				margin-left: 100px;
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+			.label {
+				font-size: 20px;
+			}
+			.row {
+				border-bottom: 1px solid #000;
+			}
+		}
+	}
+}
+.give_flex{
+  display: flex;
+  flex-direction: column;
+}

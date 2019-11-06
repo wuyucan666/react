@@ -1,0 +1,41 @@
+
+@import "~themes/public.less";
+
+.rowItem, .rowItem2 {
+  height: 56px;
+  line-height: 56px;
+  padding: 0 20px;
+  border-bottom: 1px solid #F2F2F2;
+  border-left: 1px solid #F2F2F2;
+  &:last-child {
+    border-bottom: 0 none;
+  }
+}
+.rowItem2 {
+  border-right: 1px solid #f2f2f2;
+}
+
+.head {
+  width: 100%;
+  padding: 30px;
+  margin-bottom: -30px;
+  div {
+    &:first-child {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      line-height: 40px;
+    }
+    &:last-child {
+      text-align: right;
+      button {
+        margin-left: 20px;
+        width: 120px;
+        i {
+          margin-right: 8px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

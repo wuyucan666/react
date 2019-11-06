@@ -1,0 +1,198 @@
+@import "../../../themes/public.less";
+
+.title {
+  margin-bottom: 16px;
+  >:first-child {
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .set{
+    float: right;
+    margin-right: 12px;
+    color: @fc-blue;
+    cursor: pointer;
+  }
+}
+
+.card-item {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #E1E1E5;
+  border-bottom: 0 none;
+  box-sizing: border-box;
+  padding: 0 16px;
+  &:last-child {
+    border-bottom: 1px solid #E1E1E5;
+  }
+  span {
+    display: inline-block;
+    &:nth-child(2) {
+      color: #4AACF7;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+  }
+}
+
+.yuan {
+  display: inline-block;
+  width:36px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background: #F0F5FA;
+  position: absolute;
+  right: 1px;
+  top: 28px;
+  z-index: 3;
+}
+
+
+.li{
+  padding: 10px 15px;
+  list-style-type: none;
+  display: flex;
+  border:1px solid #ccc;
+  border-bottom: 0 none;
+  justify-content: center;
+  &:last-child{
+    border-bottom: 1px solid #ccc;
+  }
+  >:first-child{
+    flex: 1;
+    line-height: 32px;
+  }
+  .select,.input{
+    display: inline-block;
+    width: 96px;
+    display: flex;
+    .number {
+      flex: 1;
+    }
+    >span{
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: #F2F6FA;
+      text-align: center;
+      line-height: 32px;
+      border: 1px solid #E1E1E5;
+      border-left: 0 none;
+    }
+  }
+  .select {
+    width: 140px;
+    input{
+      width: 50%;
+      border-right: 0 none;
+    }
+  }
+}
+
+
+
+
+:global{
+
+  .acard-list{
+    >ul {
+      max-height: 300px;
+      overflow: auto;
+    }
+    .ant-input-number-lg{
+      width: 60px !important;
+      height: 40px;
+      position: relative;
+      top: 1px;
+    }
+    .ant-select-selection--single {
+      border-left: 0 none;
+    }
+    .ant-input-number-input-wrap{
+      >input{
+        width: 100%;
+      }
+    }
+  }
+
+  .selected-dark {
+    .ant-select-selection {
+      background: #EDF3F7;
+    }
+  }
+
+  .a_pad {
+    padding: @padding-32;
+    .ant-form-item {
+      margin-bottom: 32px;
+    }
+  }
+}
+.open {
+  font-size: 14px;
+  color: #4AACF7;
+  display: block;
+  margin-top: 14px;
+  cursor: pointer;
+  i{
+    font-size: 10px;
+    margin-left: 8px;
+  }
+}
+
+.listContent {
+  margin-bottom: 40px;
+  >table {
+    width: 100%;
+    tr{
+      display: flex;
+      td{
+        flex:1;
+        margin-right: 32px;
+        &:last-child{
+          margin-right: 0;
+        }
+        button {
+          width: 100%;
+          border-color: @fc-blue;
+          color: @fc-blue;
+        }
+      }
+    }
+  }
+}
+
+.tabbar{
+  background: #fff;
+  padding: 12px;
+  overflow: hidden;
+  button{
+    width: 88px;
+    float: right;
+    margin-right: 24px;
+  }
+}
+.az_check_box {
+  float: right;
+  line-height: 40px;
+  margin-right: 30px;
+  :global {
+    .ant-checkbox-wrapper{
+      color:#333!important;
+    }
+  }
+}
+
+.discount{
+  margin-bottom: 20px;
+  span {
+    margin-right: 10px;
+  }
+  &:first-child{
+    margin-left: 50px;
+  }
+  .input {
+    width: 350px !important;
+  }
+}

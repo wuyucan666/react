@@ -1,0 +1,83 @@
+.tab{
+  display: flex;
+  margin-bottom: 30px;
+  div{
+    cursor: pointer;
+    width:80px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+.tabItem{
+  color: #ccc;
+  border:1px solid rgba(204,204,204,1);
+}
+.tabActive{
+  color: #fff;
+  background: #4AACF7;
+  border: none;
+}
+.history{
+  padding-top: 5px;
+  max-height: 291px;
+  margin-bottom: 30px;
+  overflow-y: auto;
+}
+.historyItem{
+  margin-bottom: 18px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.historyTitle{
+  display: flex;
+  span:nth-child(1){
+    font-weight: bold;
+  }
+  span:nth-child(2){
+    font-size: 12px;
+    color: #999;
+    margin: 0 8px;
+  }
+  span:nth-child(3){
+    display: inline-block;
+    width:40px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background:rgba(74,172,247,1);
+    margin-top: -5px;
+  }
+}
+.historyContent{
+  padding: 16px;
+  background: #E6E6E6;
+  color: #333;
+  line-height: 21px;
+  margin-top: 8px;
+  margin-right: 20px;
+}
+.tag{
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 28px;
+  border-radius:18px;
+  background: #E6E6E6;
+  color: #999;
+  font-weight: bold;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.tagActive{
+  color: #0090FF;
+  background: #82C7FB;
+}
+.num{
+  position: absolute;
+  bottom: -17px;
+  right: 17px;
+  color: #ccc;
+}

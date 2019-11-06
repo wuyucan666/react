@@ -1,0 +1,64 @@
+:global {
+  .settlementTypeTable {
+    .ant-table-thead > tr > th {
+      border-right: 1px solid #E6E9ED;
+    }
+
+    .ant-table-thead > tr > th {
+      border-bottom: 1px solid #E6E9ED;
+    }
+
+    .ant-table-thead > tr:not(:last-child) > th {
+      border-bottom: 1px solid #E6E9ED;
+    }
+  }
+}
+
+.store_value_tab {
+  border-bottom: 1px solid #E6E9ED;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+
+  > div {
+    width: 128px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+
+    &.cur {
+      border-bottom: 1px solid #4AACF7FF;
+      color: #4AACF7FF;
+    }
+  }
+}
+
+.settlementWrap {
+  padding: 16px 32px 32px;
+
+  .settlementTop {
+    padding-bottom: 30px;
+
+    .storesbox {
+      display: inline-block;
+      margin-right: 24px;
+      width: 200px;
+      height: 40px;
+      position: relative;
+
+      .sel {
+        width: 200px;
+        position: absolute;
+        top: 17px;
+        left: 0;
+      }
+    }
+  }
+
+  .settlementButton {
+    width: 80px;
+    margin-right: 25px;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,127 @@
+.container{
+  padding: 27px 32px 0;
+}
+.tab{
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  span{
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border:1px solid #4AACF7;
+    color: #4AACF7;
+    cursor: pointer;
+    &.active{
+      background: #4AACF7;
+      color: #fff;
+    }
+  }
+}
+.content{
+  display: flex;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+}
+.contentLeft{
+  width: 271px;
+  padding: 24px 20px;
+  color: #333;
+  :global{
+    .ant-tree.ant-tree-show-line li span.ant-tree-switcher{
+      color: #4AACF7;
+    }
+    .ant-tree.ant-tree-show-line li:not(:last-child)::before{
+      border-color: #4AACF7;
+    }
+    .ant-tree-title{
+      color: #333;
+    }
+  }
+  .select{
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+}
+.contentRight{
+  flex: 1;
+  padding: 38px 0 38px 16px;
+  border-left: 1px solid #E8E8E8;
+}
+.btn{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 29px;
+  background: #fff;
+  padding:24px 32px;
+  span:nth-child(2){
+    color: #62AAF1;
+  }
+  button{
+    width: 113px;
+    margin-left: 30px;
+  }
+}
+.category{
+  width: 100%;
+  margin-bottom: 30px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  .categoryName{
+    margin-left: 16px;
+  }
+  .goodList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .goodWrapper{
+    width:25%;
+    margin-top: 22px;
+    padding: 0 16px;
+    &:nth-child(4n){
+      padding-right: 0;
+    }
+  }
+  .good{
+    box-sizing: border-box;
+    height:134px;
+    border-top: 5px solid #9BCDFF;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 4px 10px 0px rgba(204,204,204,0.3);
+    cursor: pointer;
+    padding: 23px 20px;
+    font-size: 18px;
+    color: #333;
+    transition: all 0.2s;
+    position: relative;
+    &:hover{
+      transform: translateY(-15px);
+      border-color: #62AAF1;
+      color: #62AAF1;
+    }
+    &.selected{
+      background:rgba(237,245,252,1);
+      border: 1px solid #62AAF1;
+      border-top: 5px solid #62AAF1;
+      color: #62AAF1;
+      box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.03);
+      &:hover{
+        color: #333;
+      }
+    }
+    i{
+      position: absolute;
+      bottom: -12px;
+      right: 0;
+      font-size: 40px;
+      color: #62AAF1;
+    }
+  }
+}
+

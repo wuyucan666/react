@@ -1,0 +1,88 @@
+.container{
+  max-height: 570px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.help{
+  // position: fixed;
+  // top: 80px;
+  // right: 40px;
+  position: relative;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #4AACF7;
+  i{
+    margin-right: 8px;
+  }
+}
+.introduce{
+  font-size: 14px;
+  color: #666;
+  margin: 40px 0 68px 10px;
+  padding-left: 18px;
+  border-left: 1px dashed #ccc;
+}
+.listItem{
+  position: relative;
+  &:last-child{
+    .serial{
+      top: 2px;
+    }
+    .itemContent{
+      padding: 29px 0 0;
+    }
+  }
+  img{
+    width: 98%;
+  }
+}
+.itemContent{
+  padding: 29px 0 72px;
+}
+.serial{
+  display: inline-block;
+  width:20px;
+  height:20px;
+  line-height: 20px;
+  text-align: center;
+  background:rgba(74,172,247,1);
+  border-radius:50%;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: -28px;
+  z-index: 1;
+}
+.btn{
+  padding: 32px 0;
+  clear: both;
+  overflow: hidden;
+  button{
+    float: right;
+    width: 120px;
+  }
+}
+.special{
+  font-size: 14px;
+  color: #666;
+  margin: 40px 0 0 10px;
+  padding-left: 18px;
+  .itemContent{
+    padding-bottom: 37px;
+  }
+}
+.icon{
+  position: absolute;
+  top: 0;
+  left: -28px;
+  z-index: 1;
+  width:20px;
+  height:20px;
+  line-height: 20px;
+  text-align: center;
+  background:#FCAE19;
+  color: #fff;
+  border-radius: 50%;
+}

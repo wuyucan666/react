@@ -1,0 +1,111 @@
+@import '~themes/public';
+@border-color: #E1E1E6;
+
+// :global {
+  //.ant-modal-body {
+  //  padding: @padding-32;
+  //  .select-project-table {
+  //    tr>td, tr>th {
+  //      padding: 9px 8px !important;
+  //    }
+  //
+  //    .ant-table-thead {
+  //      background-color: #F2F6FA;
+  //    }
+  //
+  //    // .ant-table-tbody {
+  //    //   border: 1px solid @border-color;
+  //    // }
+  //  }
+  //}
+  //.ant-modal-footer {
+  //  padding-right: 32px;
+  //}
+// }
+
+.select-project-form {
+  font-size: 24px;
+  position: relative;
+  :global {
+    i.anticon-close {
+      position: absolute;
+      right: 48px;
+      top: 14px;
+      font-size: 16px;
+      // color: @fc-blue;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .anticon-search {
+      font-size: 24px !important;
+    }
+    .ant-btn-lg {
+      padding: 0 8px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  :global {
+    .item {
+      flex: 1;
+      height: 400px;
+      display: flex;
+      border: 1px solid #E1E1E6;
+      border-right: none;
+    }
+    .select-project-table {
+      border: 1px solid @border-color;
+    }
+    .ant-table-fixed-header .ant-table-scroll .ant-table-header{
+      overflow: visible!important;
+    }
+  }
+}
+
+.select {
+  min-height: 32px;
+  line-height: 32px;
+  margin-top: 15px;
+  :global {
+    .select-item {
+      float: left;
+      height: 32px;
+      border: 1px solid @fc-blue;
+      line-height: 32px;
+      padding: 0 10px;
+      margin: 0 0 24px 24px;
+      i {
+        margin-left: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  :global {
+    .tree-head {
+      height: 40px;
+      display: flex;
+      background-color: #F2F6FA;
+      align-items: center;
+      padding-left: 25px;
+      font-size: 14px;
+      color: #333;
+      flex: 1;
+    }
+    .tree-body {
+      height: 360px;
+      padding: 4px 17px;
+      overflow: scroll;
+    }
+    .ant-tree li {
+      min-height: 40px;
+    }
+  }
+}

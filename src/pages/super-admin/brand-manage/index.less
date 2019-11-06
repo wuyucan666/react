@@ -1,0 +1,126 @@
+@import "~themes/public";
+.from-wrap-margin .ant-form-item {
+  margin-bottom: 20px !important;
+}
+.title {
+  height: 60px;
+  margin:0 32px 40px 32px;
+  font-size: 16px;
+  color: #333333FF;
+  margin-top: 0;
+  padding:30px 0 0 14px;
+  font-weight: bold;
+  border-bottom:1px solid #F2F2F2FF;
+  position: relative;
+  >span{
+    display: inline-block;
+    height:14px;
+    padding-left:4px;
+    background: #4AACF7FF;
+    position: absolute;
+    bottom:10px;
+    left:0;
+  }
+}
+.form-style{
+  height:100px;
+  min-width: 476px;
+}
+
+.inputwidth {
+  min-width: auto !important;
+}
+
+.boundary {
+  padding: 5px 0;
+  border-bottom: @bc-boundary;
+  margin-bottom: 20px;
+  width: 680px;
+  margin-left: -100px;
+  font-size: @fs-16;
+  color: @fc-common;
+  font-family: @font-family-MB;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  margin-left: 66px;
+
+  .rowItem {
+    flex: 1;
+  }
+}
+
+.centerDiv {
+  margin: 0 32px;
+}
+
+.espInput {
+  width: 138px;
+}
+
+.espInput90 {
+  width: 90px;
+}
+
+.tipFont {
+  margin: 0 @margin-32 65px;
+  border: @bc-tip;
+  background: @backColor-tip;
+  height: @divHeight-80;
+
+  p {
+    margin-bottom: 0;
+    margin-left: @margin-32;
+    color: @fc-99;
+
+    span {
+      color: @fc-key;
+      margin-left: @margin-24;
+      cursor: pointer;
+    }
+  }
+
+  & > p:nth-child(1) {
+    margin-top: @margin-20;
+  }
+}
+
+.btnDiv {
+  background: #fff;
+  height:64px;
+  line-height: 64px;
+  text-align: right;
+  padding-right: 75px;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 0px 6px 0px rgba(164,177,188,0.26);
+  button{
+    width: 88px;
+    &:first-child{
+      margin-right: 24px;
+    }
+  }
+}
+
+.showOther {
+  text-align: center;
+  margin: 54px 0;
+  cursor: pointer;
+  color: #333333;
+}
+
+.tool {
+  display: none;
+  //display: flex;
+  flex-direction: row;
+
+  .tool-item {
+    margin-right: 24px;
+
+    .sel {
+      margin-left: 8px;
+    }
+  }
+}

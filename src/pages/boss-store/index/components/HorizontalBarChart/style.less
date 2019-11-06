@@ -1,0 +1,29 @@
+.tooltip{
+  padding: 12px;
+  box-shadow:0px 3px 6px 0px rgba(4,29,48,0.2);
+  border-radius:4px;
+  background: #fff;
+  opacity: 0.8;
+  font-size: 14px;
+  color: #666;
+  div:first-child{
+    margin-bottom: 5px;
+  }
+  span:first-child{
+    margin-right: 36px;
+    position: relative;
+    padding-left: 10px;
+    &:before{
+      content: ' ';
+      display: inline-block;
+      width:6px;
+      height:6px;
+      background:rgba(74,172,247,1);
+      border-radius:50%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}

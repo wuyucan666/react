@@ -1,0 +1,101 @@
+.prompt {
+  margin-top: 15px;
+  height: 60px;
+  line-height: 60px;
+  background: rgba(235,242,249,1);
+  padding: 0 32px;
+  border: 1px solid #78B6E8FF;
+  font-size: 14px;
+  color: #999999FF;
+  position: relative;
+
+  .promptIcon {
+    padding: 22px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+  }
+}
+
+.itemBox {
+  margin-top: 32px;
+}
+
+.lookItem {
+  width: 100%;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 40px;
+
+  .name {
+    flex: 90px 0 0;
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  .progress {
+    flex: 1;
+    height: 40px;
+    background: #F0F5FAFF;
+    position: relative;
+
+    .progressBox {
+      width: 80%;
+      height: 40px;
+      background: #4AACF7FF;
+    }
+
+    .value {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      line-height: 40px;
+      text-align: center;
+      color: #333333FF;
+    }
+  }
+
+  .cont {
+    flex: 170px 0 0;
+    display: flex;
+
+    .linestyle {
+      flex: 15px 0 0;
+      padding-left: 5px;
+    }
+
+    .complete {
+      flex: 1;
+      text-align: right;
+    }
+
+    .plandata {
+      flex: 1;
+    }
+  }
+}
+/*底部按钮*/
+.btnw {
+  padding: 10px 0 64px;
+
+  .btn {
+    width: 128px;
+    margin-right: 32px;
+  }
+}
+
+.lockstyle {
+  color: #000000FF;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  .icon {
+    color: #FF6F28FF;
+    font-size: 26px;
+    margin-right: 16px;
+  }
+}

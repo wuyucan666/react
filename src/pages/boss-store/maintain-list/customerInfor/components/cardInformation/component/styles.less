@@ -1,0 +1,357 @@
+.boxdiv{
+	.tableTop{
+		display: flex;
+		height:56px;
+		line-height: 56px;
+		margin-top: 32px;
+		border-bottom: 1px solid #e5e5e5;
+		background:rgba(242,246,250,1);
+		span{
+      flex: 1;
+    }
+    span:first-of-type{
+      flex: 1.5
+    }
+    span:last-of-type{
+      flex: .5;
+    }
+		&>span:nth-child(1){
+			text-indent: 10px;
+		}
+	}
+	.allcontent{
+		overflow-y: scroll;
+		height: 500px;
+		.content{
+			display: flex;
+			height:56px;
+			line-height: 56px;
+			background:white;
+			border-bottom: 1px solid #e5e5e5;
+			span{
+				flex: 1;
+      }
+      span:first-of-type{
+        flex: 1.5
+      }
+      span:last-of-type{
+        flex: .5;
+      }
+      span:nth-last-of-type(4),span:nth-last-of-type(3),span:nth-last-of-type(3),span:nth-last-of-type(2),span:nth-child(1){
+        text-indent: 10px;
+      }
+		}
+	}
+}
+.checkdiv{
+	.topT{
+		display: flex;
+		img{
+			width: 88px;
+			height: 88px;
+		}
+		&>div{
+			flex: 1;
+			margin-left: 16px;
+    		margin-top: 12px;
+			&>p{
+				font-size:14px;
+				font-weight:bold;
+				color:rgba(51,51,51,1);
+				margin-bottom: 15px
+			}
+			&>div{
+				color:rgba(153,153,153,1);
+			}
+		}
+	}
+	.tisDiv{
+		display: flex;
+		margin-top: 36px;
+		margin-bottom: 24px;
+		&>div:nth-child(1){
+			flex: 1;
+			&>span{
+				margin-right: 14px;
+				margin-left: 5px;
+				display: inline-block;
+				color: white;
+				width: 18px;
+				line-height: 18px;
+				height: 18px;
+				text-align: center;
+			}
+			&>span:nth-child(1){
+				background: #24C02F;
+			}
+			&>span:nth-child(2){
+				background: #4AACF7;
+			}
+			&>span:nth-child(3){
+				background: #AA33FB;
+			}
+		}
+		&>div:nth-child(2){
+			&>span:nth-child(1){
+				color: #4AACF7;
+			}
+			&>span:nth-child(2){
+				color: #EB5857;
+			}
+		}
+	}
+	.tablecontent{
+		.tableTop{
+			display: flex;
+			height:56px;
+			line-height: 56px;
+			background:rgba(242,246,250,1);
+			&>span:nth-child(1){
+				text-indent: 10px;
+				width: 60px;
+			}
+			&>span:nth-child(2){
+				flex: 2;
+				margin-right: 20px;
+				&>em{
+					margin-right: 14px;
+					margin-left: 5px;
+					display: inline-block;
+					color: white;
+					width: 18px;
+					line-height: 18px;
+					height: 18px;
+					text-align: center;
+				}
+			}
+			&>span:nth-child(3){
+				flex: 1;
+			}
+			&>span:nth-child(4){
+				flex: 2;
+			}
+			&>span:nth-child(5){
+				flex: 2;
+			}
+			&>span:nth-child(6){
+				flex: 1;
+			}
+			&>span:nth-child(7){
+				flex: 2;
+			}
+		}
+		.srollDiv{
+			height: 350px;
+			overflow-y: scroll;
+			p{
+				height: 40px;
+				line-height: 40px;
+				background: #F2F2F2;
+				color: #666666;
+				text-indent: 58px;
+				margin-bottom: 0;
+			}
+			.content{
+				display: flex;
+				height:56px;
+				line-height: 56px;
+				background:white;
+				border-top: 1px solid #e5e5e5;
+				&>span:nth-child(1){
+					text-indent: 10px;
+					width: 60px;
+				}
+				&>span:nth-child(2){
+					flex: 2;
+					margin-right: 20px;
+					&>em{
+						margin-right: 14px;
+						margin-left: 5px;
+						display: inline-block;
+						color: white;
+						width: 18px;
+						line-height: 18px;
+						height: 18px;
+						text-align: center;
+					}
+				}
+				&>span:nth-child(3){
+					flex: 1;
+					em{
+						width: 10px;
+						height: 10px;
+						display: inline-block;
+						border-radius: 50%;
+						margin-right: 5px;
+					}
+				}
+				&>span:nth-child(4){
+					flex: 2;
+				}
+				&>span:nth-child(5){
+					flex: 2;
+				}
+				&>span:nth-child(6){
+					flex: 1;
+				}
+				&>span:nth-child(7){
+					flex: 2;
+				}
+			}
+		}
+	}
+}
+.showZ{
+	background: #3CDD40;
+}
+.showR{
+	background: #EB5857;
+}
+.indexsss{
+	z-index: 10000;
+}
+.damage_symbol{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 7px;
+    line-height: 18px!important;
+    text-align: center;
+    color: #fff;
+}
+.car_current {
+	height: 500px;
+	overflow-y: scroll;
+	margin-right: -180px;
+  	.car_box {
+  		width: 270px;
+	  	height: 112px;
+	  	float: left;
+	  	border: 1px solid #F2F2F2;
+	  	position: relative;
+	  	margin-right: 166px;
+	  	margin-bottom: 30px;
+	  	cursor: pointer;
+	  	.car_box_check{
+	  		position: absolute;
+	  		top: 0;
+    		right: 0;
+	  	}
+	  	.car_box_cont{
+	  		display: flex;
+	  		.car_box_img{
+	  			width: 76px;
+	  			height: 76px;
+	  			margin: 18px;
+	  			border: 1px solid #E6E6E6;
+	  			img{
+	  				width:100%;
+	  				height:100%;
+	  			}
+	  		}
+	  		.car_box_cont_txt{
+	  			flex: 1;
+	  			&>div{
+	  				margin-top: 28px;
+	  				margin-bottom: 16px;
+	  			}
+	  		}
+	  	}
+	}
+}
+.zl_tableHead{
+	width:845px;
+	height:56px;
+	background:rgba(242,246,250,1);
+	box-shadow:0px -1px 0px 0px rgba(242,242,242,1);
+	span{
+		font-size:14px;
+		font-family:PingFangSC-Regular;
+		font-weight:400;
+		color:rgba(0,0,0,1);
+		line-height: 56px;
+
+	}
+	span:nth-child(1){
+		float: left;
+		margin-left: 11px;
+	}
+	span:nth-child(2){
+		float: right;
+		margin-right: 243px;
+	}
+}
+.zl_tableContent{
+	padding: 0;
+li{
+	width:837px;
+	height:56px;
+	list-style: none;
+	overflow:hidden;
+	background:rgba(255,255,255,1);
+	border-bottom: 1px solid rgba(242,242,242,1);
+	padding-left: 17px;
+	line-height: 56px;
+}
+
+}
+.zl_buttons{
+	height: 152px;
+	// background-color: pink;
+	position: relative;
+}
+.zl_money{
+	height: 140px;
+	position: relative;
+	// background-color: pink;
+	.zl_money_content{
+		position: absolute;
+		bottom:0;
+		left:50%;
+		transform: translateX(-50%);
+		width:280px;
+		height:75px;
+		background:rgba(255,255,255,1);
+		border:1px solid rgba(225,225,230,1);
+
+		.zl_moneyContent {
+			width:74px;
+			height:73px;
+			background:rgba(242,246,250,1);
+			line-height: 73px;
+			text-align: center;
+			display: inline-block;
+			font-size:16px;
+			font-family:PingFangSC-Regular;
+			font-weight:400;
+			color:rgba(153,153,153,1);
+
+		}
+		input {
+			border: 0 none !important ;
+		}
+		span{
+			border: 0 none;
+		}
+	}
+}
+.dateSelect {
+  > span {
+    display: inline-block;
+    padding: 0 5px;
+    background: #4AACF7;
+    color: #fff;
+    margin-right: 10px;
+    line-height: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+.serve_card {
+  :global {
+    .ant-table-content {
+      height: 590px;
+      overflow-y: scroll;
+    }
+  }
+}

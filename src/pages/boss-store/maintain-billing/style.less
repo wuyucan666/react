@@ -1,0 +1,147 @@
+@import "~themes/public.less";
+
+.tabbar {
+  height: 64px;
+  background: #fff;
+  line-height: 64px;
+  box-sizing: border-box;
+  padding: 30px;
+  b {
+    font-weight: normal;
+  }
+}
+
+:global {
+  .ainier_empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ainier-list-1440 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
+
+.popover {
+  max-height: 600px;
+  overflow: scroll;
+  padding: 12px 16px;
+  .part {
+    // padding-bottom: 20px;
+    border-bottom: 1px solid #F2F2F2;
+    >p {
+      width: 240px;
+      color: #333333;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 7px 0;
+      margin: 0;
+    }
+    div {
+      width: 240px;
+      p {
+        margin: 10px 0;
+        color: #333;
+      }
+      span{
+        color: #999;
+        font-size: 14px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.right {
+  button {
+    width: 132px;
+    margin-right: 30px;
+  }
+  .account{
+    background: #FF6F28;
+    color: #fff;
+  }
+}
+
+.left {
+  flex: 1;
+  span {
+    margin-right: 10%;
+    font-size: 14px;
+    color: #999;
+    b {
+      color: #333;
+    }
+  }
+  .total {
+    color: #FF6F28;
+    b {
+       color: #FF6F28;
+    }
+  }
+}
+.payModal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div:nth-child(1){
+    width:88px;
+    height:88px;
+    line-height: 88px;
+    text-align: center;
+    background:rgba(28,192,11,1);
+    border-radius:50%;
+    color: #fff;
+    margin-bottom: 17px;
+    i{
+      font-size: 30px;
+    }
+  }
+  div:nth-child(2){
+    color: #000;
+    font-size: 14px;
+  }
+  div:nth-child(3){
+    margin-top: 47px;
+    margin-bottom: 22px;
+    button{
+      width: 120px;
+    }
+    button:first-child{
+      margin-right: 20px;
+    }
+  }
+}
+.print{
+  position: fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  top:0;
+  background: #fff;
+  z-index: 20000;
+}
+.btn{
+  width: 140px;
+  text-align: center;
+  border:1px solid rgba(102, 102, 102, 1);
+  span{
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }
+  &:hover{
+    span{
+      color:#4aacf7 ;
+    }
+  }
+  &.active{
+    border-color: #4aacf7;
+    span{
+      color: #4aacf7;
+    }
+  }
+}

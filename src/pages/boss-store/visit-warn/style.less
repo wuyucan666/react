@@ -1,0 +1,66 @@
+@import "~themes/public.less";
+
+@mainColor:#4aacf7;
+
+.lyc_set{
+  // margin: 0 31px 30px 31px;
+  margin-bottom: 33px;
+  box-sizing: border-box;
+  padding: 32px 32px;
+  border:@bc-default;
+  height: 152px;
+  >div:nth-child(1){
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      >span:nth-of-type(1){
+          color:@fc-common;
+          font-size: @fs-16;
+          font-weight: bold;
+      }
+  }
+  >div:nth-child(2){
+      color:@fc-99;
+      font-size: @fs-12;
+      >input{
+          width: 88px;
+          height: 44px;
+          border:@bc-default;
+          margin:0 10px;
+          padding-left: 10px;
+          cursor: pointer;
+          box-sizing: border-box;
+          color: @fc-common;
+      }
+      >span{
+          color: @fc-common;
+          font-size: @fs-14;
+      }
+  }
+  >p{
+  color:@fc-99;
+  font-size: @fs-12;
+  margin-bottom: 47px;
+  input{
+      width: 88px;
+      height: 44px;
+      color: @fc-common;
+      border:@bc-default;
+      margin:0 10px;
+      padding-left: 10px;
+      cursor: pointer;
+      box-sizing: border-box;
+  }
+  }
+}
+:global{
+    .ant-empty-image{
+      height: 200px;
+    }
+  }
+  .lyc_flex{
+      display: flex;
+      .lyc_flex1{
+          flex: 1;
+      }
+  }

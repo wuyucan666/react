@@ -1,0 +1,112 @@
+.carContainer{
+  clear: both;
+  overflow: hidden;
+  padding: 2px 16px 34px;
+}
+.carBox{
+  float: left;
+  height: 112px;
+  padding: 0 16px 0;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+.btn{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border:1px solid rgba(74, 172, 247, 1);
+  color:rgba(74,172,247,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i{
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+}
+.car{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border:1px solid rgba(230, 230, 230, 1);
+  padding-left: 18px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  &:hover{
+    .action{
+      transform: translateY(0);
+    }
+  }
+}
+.icon{
+  width: 76px;
+  height: 76px;
+  display: flex;
+  border:1px solid rgba(230, 230, 230, 1);
+  margin-right: 16px;
+  align-items: center;
+  img{
+    width: 100%;
+    margin: auto;
+  }
+}
+.carInfo{
+  div:first-child{
+    font-size:16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  div:last-child{
+    color: #333;
+  }
+}
+.action{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,1);
+  opacity:0.85;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: all 0.3s;
+  span{
+    margin-right: 19px;
+    font-size: 14px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+:global{
+  .unbind-car{
+    .ant-modal-content{
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .carBox {
+    width: 25%;
+  }
+  .car{
+
+  }
+}
+@media screen and (min-width: 1441px) {
+  .carBox {
+    width: 20%;
+  }
+  .car{
+
+  }
+}

@@ -1,0 +1,54 @@
+.wrap {
+  width: 100%;
+  :global {
+    .grid {
+      padding-top: 32px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 32px;
+      grid-row-gap: 32px;
+      box-sizing: border-box;
+    }
+    .pay-item {
+      height: 112px;
+      border: 1px solid #f2f2f2;
+      padding-left: 24px;
+      cursor: pointer;
+      .checked-icon {
+        display: none;
+      }
+      &.active {
+        border: 1px solid #4aacf7;
+        position: relative;
+        .checked-icon {
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+      &.bind-car-new-car{
+        border: 1px solid #4aacf7;
+        display: flex;
+        justify-content: center;
+        padding:0;
+        >div{
+          color:#4aacf7;
+          i{color:#4aacf7;}
+        }
+      }
+      img.main-img {
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+      }
+      h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

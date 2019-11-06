@@ -1,0 +1,20 @@
+dist
+node_modules
+yarn.lock
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# ide
+.idea
+.project
+.vscode
+
+# Mac General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# umi
+.umi
+.umi-production

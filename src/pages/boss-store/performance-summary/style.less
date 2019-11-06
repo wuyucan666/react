@@ -1,0 +1,186 @@
+@import "~themes/public.less";
+.zl_contentBox{
+    padding: 32px;
+}
+@mainColor:#4aacf7;
+
+.zl_sec2,.zl_sec3{
+    p{
+        height: 24px;
+        line-height: 16px;
+        font-size:16px;
+         font-family:MicrosoftYaHei-Bold;
+         padding-bottom: 28px;
+         font-weight:bold;
+         color:rgba(51,51,51,1);
+         border-bottom: 1px solid  rgba(242,242,242,1);
+         .zl_blueD{
+             width: 4px;
+             height: 14px;
+             display: inline-block;
+             background: @mainColor;
+             margin-right: 10px;
+             vertical-align: middle;
+         }
+    }
+}
+.zl_printing{
+    width: 100%;
+    height: 442px;
+    margin-bottom: 60px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(204, 233, 255, 1);
+    box-sizing: border-box;
+    padding: 30px 40px;
+}
+.zl_Info{
+    height: 24px;
+    width: 185px;
+    background-color: #fff0e9;
+    display: inline-block;
+    color: #ff6f28;
+    font-size: 12px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    line-height: 24px;
+     margin-left: 24px;
+     text-align: center;
+     i{
+         margin: 5px;
+     }
+}
+.zl_btnBox{
+    float: right;
+    height: 40px;
+    width: 320px;
+}
+.zl_Printing_Content{
+    width: 100%;
+    height: 270px;
+
+    // background-color: pink;
+    margin-top: 30px;
+}
+.zl_superTable{
+    height: 728px;
+   width: 100%;
+//    background-color: pink;
+   overflow-x: auto;
+   position: relative;
+
+}
+.zl_superTable::-webkit-scrollbar {display:none}
+.zl_tableHead{
+    box-sizing: border-box;
+    height: 112px;
+    background: #F2F6FA;
+    display: flex;
+    .zl_tableItem{
+      height:100%;
+      box-sizing: border-box;
+      line-height: 112px;
+      border-top:1px solid #E1E1E6;
+      border-bottom: 1px solid  #E1E1E6;
+      border-right: 1px solid #E1E1E6;
+      font-size:14px;
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(0,0,0,1);
+        ul{
+            display:flex;
+            height: 56px;
+            padding-left: 0;
+            li{
+                width: 150px;
+                height: 56px;
+                padding-left:10px;
+                box-sizing:border-box;
+                line-height: 56px;
+                list-style: none;
+                padding-left: 0;
+                margin-left: 0;
+                padding-left: 10px;
+                position: relative;
+            }
+        }
+
+    }
+}
+.zl_TableContent{
+    width: 1740px;
+    position: absolute;
+}
+.zl_paixu{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    // background-color: pink;
+    position: absolute;
+    margin-top: 13px;
+}
+.zl_tableBody{
+   width: 100%;
+   color: #666;
+   overflow: hidden;
+   .zl_TableBodyItem{
+       box-sizing: border-box;
+       height: 56px;
+       display: flex;
+
+       .zlcol{
+           box-sizing: border-box;
+           display: flex;
+           border-bottom:1px solid #f2f2f2;
+           div:last-child{
+            border-right:1px solid #e1e1e6;
+           }
+           div{
+             padding-left:15px;
+             padding-top: 20px;
+             text-align: 56px;
+             color: #666;
+             font-weight: 400;
+             width: 150px;
+             box-sizing: border-box;
+             position: relative;
+           }
+       }
+   }
+}
+.zl_circle{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    // background-color: pink;
+    text-align: center;
+    margin-top: -2px;
+    position: absolute;
+    top:13px;
+    line-height: 30px;
+    left: 9px;
+}
+.zl_TableBodyItem:hover{
+    background-color: #f2f2f2;
+}
+.zl_colorBoll{
+
+    padding-left: 50%;
+    height: 20px;
+    margin-top: 20px;
+    li{
+        list-style: none;
+        float: left;
+        margin-right: 20px;
+        span{
+           display: inline-block;
+           width: 8px;
+           height: 8px;
+           border-radius:50%;
+           margin-right: 5px;
+        }
+    }
+}
+.zl_tableTitelItem:hover{
+    background-color: #f2f2f2;
+}

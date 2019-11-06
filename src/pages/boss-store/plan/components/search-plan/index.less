@@ -1,0 +1,111 @@
+.searchMember {
+  display: block;
+  .search {
+    width: 100%;
+  }
+  :global {
+    .pointer {
+      cursor: pointer;
+      color: #999;
+      i{
+        margin-right: 5px;
+      }
+    }
+  }
+  .client{
+    cursor:pointer;
+    :global{
+      .head{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        margin-bottom: 19px;
+        div:nth-child(1){
+          width: 46px;
+          height: 46px;
+          box-sizing: border-box;
+          border: 1px solid #E6E6E6;
+          display: flex;
+          img{
+            width: 100%;
+            margin: auto;
+          }
+        }
+        div:nth-child(2){
+          color: #4AACF7;
+          margin: 0 18px 0 10px;
+        }
+        div:nth-child(3){
+          color: #333;
+          flex: 1;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+      .info{
+        border: 1px solid #E6E6E6;
+      }
+      .wx{
+        color: #ccc;
+        display: flex;
+        align-items: center;
+      }
+      .haswx{
+        span:nth-child(1){
+          color: rgb(37,180,41);
+        }
+        span:nth-child(2){
+          color: #333;
+        }
+      }
+      .icon-xingbienan{
+        color: #4AACF7;
+        margin: 0 10px 0 6px;
+      }
+      .icon-xingbienv{
+        color: #4AACF7;
+        margin: 0 10px 0 6px;
+      }
+      .iconfont{
+        margin: 0 7px 0 5px;
+        margin-bottom: -3px;
+      }
+      .flex{
+        padding: 14px;
+        color: #333;
+        &:first-child{
+          padding-bottom: 5px;
+          .tag{
+            padding:0 3px;
+            font-size: 10px;
+            color: #fff;
+            background:#4AACF7 ;
+          }
+        }
+        &:nth-child(2){
+          padding: 0 14px 14px;
+        }
+        &:last-child{
+          padding: 0;
+        }
+      }
+      .item{
+        display: flex;
+        flex-direction: column;
+        padding: 14px 0 14px 14px;
+        border-top: 1px solid #E6E6E6;
+        border-right: 1px solid #E6E6E6;
+        &:last-child{
+          border-right: none;
+        }
+        span:nth-child(1){
+          color: #333;
+        }
+        span:nth-child(2){
+          color: #999;
+        }
+      }
+    }
+  }
+}

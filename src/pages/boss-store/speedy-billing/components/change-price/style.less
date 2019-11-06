@@ -1,0 +1,59 @@
+.formItem {
+  .title {
+    height: 40px;
+    background: #F2F9FF;
+    line-height: 40px;
+    color: #333333;
+    padding-left: 12px;
+    span {
+      margin-right: 6px;
+    }
+  }
+  .col {
+    display: grid;
+    margin-top: 26px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 26px;
+    >div {
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 8px;
+        &:last-child {
+          color: #CCCCCC;
+        }
+      }
+      div {
+        flex: 1;
+        position: relative;
+        span {
+          position: absolute;
+          display: block;
+          margin-right: 0;
+          width: 40px;
+          height: 38px;
+          text-align: center;
+          top: 1px;
+          right: 1px;
+          line-height: 38px;
+          background: #EDF3F7;
+        }
+      }
+    }
+  }
+  .discount {
+    margin-top: 40px;
+    div {
+      color: #999999;
+      margin-bottom: 4px;
+      font-size: 14px;
+      span {
+        margin-right: 6px;
+      }
+      &:nth-child(1) {
+        color: #333;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

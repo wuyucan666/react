@@ -1,0 +1,87 @@
+@import "~themes/public";
+
+.title{
+  margin: 32px;
+  font-size:@fs-16;
+  font-family: @font-family-MB;
+  color:@fc-common;
+  padding:@padding-32;
+  margin-top:0;
+  font-weight:bold;
+}
+.inputwidth{
+  min-width: auto !important;
+}
+.boundary{
+  padding: 5px 0px;
+  border-bottom: @bc-boundary;
+  margin-bottom: 20px;
+  width: 680px;
+  margin-left: -100px;
+  font-size:@fs-16;
+  color:@fc-common;
+  font-family: @font-family-MB;
+}
+.rows{
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  margin-left: 66px;
+  .rowItem{
+    flex: 1;
+  }
+}
+.centerDiv{
+  margin: 0 auto;
+  width: 466px;
+}
+.espInput{
+  width: 138px;
+}
+.espInput90{
+  width: 90px;
+}
+.tipFont{
+  margin:0 @margin-32 65px @margin-32;
+  border: @bc-tip;
+  background: @backColor-tip;
+  height: @divHeight-80;
+  p{
+    margin-bottom: 0;
+    margin-left: @margin-32;
+    color: @fc-99;
+    span{
+      color: @fc-key;
+      margin-left: @margin-24;
+      cursor: pointer;
+    }
+  }
+  &>p:nth-child(1){
+    margin-top: @margin-20;
+  }
+}
+
+.btnDiv{
+  text-align: center;
+  &>button:nth-child(2){
+    margin-left: @margin-16;
+  }
+}
+.showOther{
+  text-align: center;
+  margin: 54px 0;
+  cursor: pointer;
+  color: #333333;
+}
+.tool{
+  display: none;
+  //display: flex;
+  flex-direction: row;
+  .tool-item{
+    margin-right: 24px;
+    .sel{
+      margin-left: 8px;
+    }
+  }
+}
+

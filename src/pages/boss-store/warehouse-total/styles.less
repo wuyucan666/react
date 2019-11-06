@@ -1,0 +1,108 @@
+.piechartDiv{
+	width: 100%;
+	&>div{
+		height: 480px;
+		width: 100%;
+		.topone{			
+			text-indent: 32px;
+			color: #333333;
+			border: 1px solid white;
+			p{
+				margin-top: 30px;
+				color: #333333;
+				font-size: 16px;
+				margin-bottom: -6px;
+			}
+			span{
+				margin-left: 32px;
+				color: #333333;
+				font-size: 24px;
+			}
+		}
+		.toptwo{
+			height: 440px;
+		}
+	}
+}
+.productRankingDiv{
+	margin-top: 32px;
+	display: flex;
+	&>div:nth-child(1){
+		flex: 1;
+		height: 500px;
+		margin-right: 32px;		
+		&>div{
+			display: flex;
+			&>div:nth-child(1){
+				margin-left: 32px;
+			}
+			&>div{
+				flex: 1;
+				height: 400px;
+				margin-right: 32px;				
+			}
+		}
+	}
+	&>div:nth-child(2){
+		width: 400px;
+		height: 500px;
+		padding: 0 32px;
+		p{
+			margin-bottom: 32px;
+			display: flex;
+			font-size:16px;
+			&>span:nth-child(1){
+				flex: 1;
+			}
+			&>span:nth-child(2){
+				width: 80px;
+				color: #4AACF7;
+				cursor: pointer;
+			}
+		}
+		&>div{
+			font-size:14px;
+			display: flex;
+			height: 56px;
+			line-height: 56px;		
+			border-bottom: 1px solid #E1E1E6;
+			&>span:nth-child(1){
+				flex: 1;
+				color: #333333;
+			}
+			&>span:nth-child(2){
+				width: 80px;
+				color: #FF6F28;
+			}
+		}
+	}
+}
+.productNumMoneyDiv{
+	height: 780px;
+	&>div:nth-child(1){
+		display: flex;
+		&>div:nth-child(1){
+			margin-left: 30px;
+		}
+		&>div:nth-child(2){
+			margin-left: 24px;
+			line-height: 32px;
+		}
+	}
+	&>div:nth-child(2){
+		height: 646px;
+		display: flex;
+		margin-top: 32px;
+		&>div:nth-child(1){
+			flex: 1;
+			border:1px solid rgba(225, 225, 230, 1);
+			margin-left: 30px;
+		}
+		&>div:nth-child(2){
+			flex: 1;
+			border:1px solid rgba(225, 225, 230, 1);
+			margin: 0 34px;
+			line-height: 32px;
+		}
+	}
+}

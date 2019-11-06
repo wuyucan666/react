@@ -1,0 +1,234 @@
+@import "~themes/public.less";
+.lyc_projectBox{
+  padding: 20px 32px 0 32px;
+  box-sizing: border-box;
+  position: relative;
+  :global{
+    .ant-empty-image{
+      height: 200px;
+    }
+  }
+}
+.rowbtns {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    .btnWrap {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      transition: all 0.3s;
+      opacity: 1;
+      width: 120px;
+      justify-content: space-around;
+      cursor: pointer !important;
+      i {
+        display: block;
+        float: left;
+        opacity: 1;
+        transition: all 0.3s;
+        // transform: translate3d(100%, 0, 0);
+      }
+    }
+}
+.dropOverDownward{
+  border-bottom: 2px dashed #1890ff;
+}
+
+.dropOverUpward{
+  border-top: 2px dashed #1890ff;
+}
+.addRow{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .btnWrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: all 0.3s;
+    opacity: 0;
+    width: 120px;
+    justify-content: space-around;
+    cursor: pointer !important;
+    i {
+      display: block;
+      float: left;
+      opacity: 0;
+      transition: all 0.3s;
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+  table{
+    width: 100%;
+    // border-bottom:1px solid #e5e5e5；
+    border-bottom:1px solid #f4f4f4;
+    tbody{
+      tr{
+        width: 100%;
+        td{
+          padding: 16px;
+          text-align: left;
+          box-sizing: border-box;
+          // display: flex;
+          // justify-content: flex-start;
+          // align-items: center;
+          // background: red;
+        }
+        td:nth-child(1){
+          width: 8%;
+        }
+        td:nth-child(2){
+          width: 8%;
+        }
+        td:nth-child(3){
+          width: 56%;
+        }
+        td:nth-child(4){
+          width: 28%;
+          // position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+        }
+      }
+    }
+  }
+}
+tr:hover .btnWrap {
+  background: #f0fbff;
+  opacity: 1;
+  i {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    &.disabled {
+      opacity: 0.6;
+    }
+  }
+}
+tr:hover{
+  background: #f0fbff;
+}
+
+.yc_seeExample{
+  position: absolute;
+  right: 32px;
+  top: 35px;
+  color: #4AACF7;
+  font-size:14px;
+  font-family:MicrosoftYaHei;
+  font-weight:400;
+  cursor: pointer;
+}
+.yc_dot{
+  display: inline-block;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background: #009DD9;
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+  margin-right: 7px;
+}
+.yc_txt{
+  font-size:14px;
+  font-family:MicrosoftYaHei;
+  font-weight:400;
+  color:rgba(102,102,102,1);
+}
+.yc_border{
+  width:458px;
+  height:64px;
+  border:1px dashed rgba(255,47,47,1);
+  margin-left: 23px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  p{
+    font-size:14px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color: #666;
+    margin: 0px;
+  }
+  margin-bottom: 10px;
+}
+.yc_titdiv{
+  margin: 0 auto 10px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .yc_tit1{
+    width: 7px;
+    height: 7px;
+    background: #FF2F2F;
+  }
+  .yc_tit2{
+    width:0;
+	  height:0;
+    border-right:10px solid transparent;
+    border-left:10px solid transparent;
+    border-top:6px solid #FF2F2F;
+  }
+}
+.yc_contentDiv{
+  margin: 0 auto 30px;
+  width: 458px;
+  height: 56px;
+  background: #EFEFEF;
+  padding: 8px 39px 8px 28px;
+  box-sizing: border-box;
+  .yc_content{
+    width:391px;
+    height:40px;
+    background: #fff;
+    font-size:14px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+  }
+}
+.yc_modaldiv{
+  :global{
+    .ant-modal-content{
+      height: 365px;
+    }
+  }
+}
+.wyc_img{
+  width: 321px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  transform: translateX(-50%)
+}
+.wyc_no_huifang{
+  position: absolute;
+  left: 50%;
+  top: 164px;
+  transform: translateX(-50%)
+}
+.wyc_huifang_btn{
+  position: absolute;
+  left: 50%;
+  bottom: 23px;
+  transform: translateX(-50%)
+}

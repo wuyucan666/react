@@ -1,0 +1,342 @@
+@import "~themes/public.less";
+
+.project {
+  .but {
+    width: 100%;
+    color: @fc-blue;
+    border-color: @fc-blue;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.ainier_pop {
+  :global {
+    .ant-popover-inner-content {
+      padding: 0 !important;
+    }
+  }
+}
+
+
+.popover {
+  max-height: 600px;
+  overflow: scroll;
+  padding: 12px 16px;
+  .part {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    display: flex;
+    span {
+      &:nth-child(1) {
+        flex: 1;
+        font-weight: bold;
+        color: #333;
+      }
+      &:nth-child(3) {
+        color: #FF7538;
+      }
+    }
+  }
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  >div {
+    width: 130px;
+    text-align: right;
+    color: #FF6F28;
+    text-indent: 6px;
+    word-break: break-all;
+    margin-right: 8px;
+    line-height: 20px;
+  }
+  button {
+    width: 80px;
+    height: 36px;
+    padding: 0px;
+  }
+}
+
+:global {
+  .ainier-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .ainier-list .ant-checkbox-wrapper {
+    span {
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}
+
+.item {
+  border: 1px solid #E5F4FF;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    border: 1px solid #4AACF7;
+  }
+}
+.checkedItem {
+  border: 1px solid @fc-blue;
+}
+.head {
+  height: 50px;
+  background: #F2F6FA;
+  line-height: 50px;
+  padding: 16px;
+  box-sizing: border-box;
+  font-size: 12px;
+  >span {
+    &:first-child {
+      margin-right: 20px;
+    }
+    color: #333333;
+    font-weight: bold;
+  }
+  .card {
+    display: inline-block;
+    height: 20px;
+    color: @fc-blue;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -10px;
+      top: 4px;
+      width: 1px;
+      height: 12px;
+      background: @fc-blue;
+    }
+  }
+  .youhui {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -10px;
+      top: 20px;
+      width: 1px;
+      height: 12px;
+      background: @fc-blue;
+    }
+  }
+  .delete {
+    flex: 1;
+    text-align: right;
+    span {
+      cursor: pointer;
+      color:#999;
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 0 10px;
+  .add-btn {
+    height: 50px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    line-height: 50px;
+    display: flex;
+    color: #4AACF7;
+    border: 1px dashed #4AACF7;
+    border-bottom: 0 none;
+    width: 100%;
+    span {
+      margin-right: 10px;
+    }
+    &:nth-child(3) {
+      border-bottom: 1px dashed #4AACF7;
+    }
+
+  }
+  .row {
+    color: #666;
+    text-align: left;
+    display: flex;
+    height: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    border-bottom: 1px dashed #E6E6E6;
+    >span {
+      &:nth-child(1) {
+        color: #999999;
+        margin-right: 8px;
+      }
+      &:nth-child(2) {
+        color: #FF6F28;
+        margin-right: 8px;
+      }
+      &:nth-child(3) {
+        color: #4AACF7;
+        cursor: pointer;
+      }
+    }
+    .operate {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      :global {
+        .ant-input-number {
+          height: 36px;
+          line-height: 36px;
+        }
+        .ant-input-number-input {
+          text-align: center;
+        }
+      }
+      span {
+        font-size: 12px;
+        color: #333333;
+        display: inline-block;
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        border: 1px solid #E5E5E5;
+        &:first-child {
+          border-right: 0 none;
+        }
+        &:last-child {
+          border-left: 0 none;
+        }
+        &:active {
+          border: 1px solid #4AACF7;
+          color: #4AACF7;
+        }
+      }
+      .disabled {
+        color: #cccccc;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.must {
+  padding-left: 6px;
+  &::before {
+    content: '*';
+    position: relative;
+    color: #FF0000;
+    left: -6px;
+    top: 2px;
+  }
+}
+
+.edit{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span:last-child{
+    color: #999;
+    cursor: pointer;
+  }
+}
+.staff{
+  cursor: pointer;
+  height: 100px;
+  border: 1px solid #F2F2F2;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #F7F7F7;
+  &:hover{
+    background: #F2F9FF;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    span{
+      font-size: 14px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+  }
+  :global {
+    .ant-input-number {
+      color: #FE9213 !important;
+    }
+    .ant-input-number-input {
+      text-align: center;
+    }
+  }
+}
+.activeStaff{
+  border-color: #4AACF7;
+  position: relative;
+}
+.sign{
+  font-size: 30px!important;
+  color: #4AACF7;
+  position: absolute;
+  top: -6px;
+  right: -1px;
+}
+.staffItem{
+  width: 90%;
+  height:40px;
+  padding: 0 9px;
+  background:rgba(250,250,250,1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add{
+  width:80%;
+  max-width: 173px;
+  height:40px;
+  line-height: 40px;
+  background:rgba(255,255,255,1);
+  border:1px dashed rgba(74,172,247,1);
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  color: #4AACF7;
+  i{
+    margin-right: 9px;
+  }
+}
+.staffModal{
+  :global{
+    .ant-input-number-handler-wrap{
+      display: none;
+    }
+  }
+}
+.staffs_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+}

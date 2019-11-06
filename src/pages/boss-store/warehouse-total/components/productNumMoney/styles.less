@@ -1,0 +1,102 @@
+.moneyNum{
+	&>div:nth-child(1){
+		height:140px;
+		display: flex;
+		margin: 0 20%;
+		&>div{
+			flex: 1;
+			margin-top: 44px;
+		}
+		&>div:nth-child(1){
+      text-indent: 20%;
+      text-align: center;
+			p{
+				margin-bottom: 0px;
+			}
+			span{
+				font-size:24px;
+				font-weight:bold;
+				display: inline-block;
+				color:rgba(74,172,247,1);
+			}
+		}
+		&>div:nth-child(2){
+      // text-indent: 25%;
+      text-align: center;
+			p{
+				margin-bottom: 0px;
+			}
+			span{
+				font-size:24px;
+				font-weight:bold;
+				display: inline-block;
+				color:rgba(74,172,247,1);
+			}
+		}
+	}
+	&>div:nth-child(2){
+		&>div:nth-child(1){
+			color: #333333;
+			background: #F2F6FA;
+			border-bottom:none;
+			display: flex;
+			height: 56px;
+			line-height: 56px;
+			&>span:nth-child(1){
+				width: 80px;
+				text-align: center;
+			}
+			&>span:nth-child(2){
+				flex: 2;
+				text-align: center;
+			}
+			&>span:nth-child(3){
+				flex: 1;
+				position: relative;
+				&>i{
+					position: absolute;
+					right: 30px;
+					top: 22px;
+					width:5px;
+					height:8px;
+					color: #CCCCCC;
+				}
+			}
+		}
+		&>div:nth-child(2){
+			height: 450px;
+			overflow-y: scroll;
+			&>div:hover {
+				background:#F0FBFF;
+			}
+			&>div{
+				display: flex;
+				color: #666666;
+				height: 56px;
+				line-height: 56px;
+				border-bottom: 1px solid #E1E1E6;
+				cursor: pointer;
+				&>span:nth-child(1){
+					width: 80px;
+					text-align: center;
+				}
+				&>span:nth-child(2){
+					flex: 2;
+					text-align: center;
+				}
+				&>span:nth-child(3){
+					flex: 1;
+					position: relative;
+					&>i{
+						position: absolute;
+						right: 30px;
+						top: 22px;
+						width:5px;
+						height:8px;
+						color: #CCCCCC;
+					}
+				}
+			}
+		}
+	}
+}

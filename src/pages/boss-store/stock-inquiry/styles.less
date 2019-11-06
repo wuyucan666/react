@@ -1,0 +1,34 @@
+.tablefather{
+	display: flex;
+	&>div:nth-child(1){
+		margin-right: 10px;
+	}
+	&>div{
+		flex: 1;
+		border: 1px solid #E1E1E6;
+	}
+}
+.cur{
+	cursor: pointer;
+}
+.func{
+	height: 32px;
+	line-height: 32px;
+	margin: 20px 0;
+	display:flex;
+	&>div:nth-child(1){
+		flex: 1;
+		color: #333333;
+		margin-left: 24px;
+	}
+	&>div:nth-child(2){
+		margin-right: 24px;
+		&>span{
+			margin-right: 8px;
+		}
+	}
+}
+.tableDiv{
+	height: 500px;
+	overflow: scroll;
+}

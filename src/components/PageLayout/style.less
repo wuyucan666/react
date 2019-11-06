@@ -1,0 +1,141 @@
+@import "~themes/public.less";
+
+.layout {
+  display: flex;
+  margin-bottom: -64px;
+  margin-top: 24px;
+
+  :global {
+    .leftitem {
+      width: 400px;
+      padding-right: 14px;
+
+      .member {
+        width: 100%;
+        padding: @padding-32;
+        background-color: #fff;
+        margin-bottom: 20px;
+        h3 {
+          line-height: 1;
+          margin-bottom: 0;
+          color: #333;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+
+      .content {
+        width: 100%;
+        .item {
+          background-color: #fff;
+          width: 100%;
+          position: relative;
+          min-height: 66px;
+          display: flex;
+          align-items: center;
+          padding: 0 @padding-32;
+          cursor: pointer;
+          border: 1px solid #fff;
+
+          h3 {
+            line-height: 1;
+            margin-bottom: 0;
+            font-weight: bold;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            left: 32px;
+            right: 32px;
+            bottom: 0;
+            height: 0;
+            border-bottom: 1px solid #f2f2f2;
+          }
+
+          &.current-last:after {
+            display: none;
+          }
+
+          &:last-child:after {
+            display: none;
+          }
+
+          &.current {
+            border: 1px solid @fc-blue;
+            border-left-width: 6px;
+            padding-left: 27px;
+
+            &:after {
+              display: none;
+            }
+
+            h3 {
+              color: @fc-blue;
+            }
+          }
+
+          .item-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+          }
+
+          .item-value {
+            flex: 1;
+            text-align: right;
+            color: #999999;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .after {
+        width: 100%;
+        padding: @padding-32;
+        background-color: #fff;
+        margin-top: 20px;
+      }
+    }
+
+    .rightitem {
+      flex: 1;
+      background-color: #fff;
+      margin-left: 6px;
+      display: flex;
+
+      .item-wrap {
+        width: 100%;
+        padding: @padding-32;
+      }
+
+      h3 {
+        font-size: 16px;
+        color: #333;
+        line-height: 1;
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+
+      .main {
+        flex: 1;
+        overflow: scroll;
+        overflow-x: hidden;
+      }
+    }
+  }
+}
+
+.operation {
+  button {
+    width: 120px;
+    margin-left: 20px;
+    margin-top: -21px;
+  }
+  
+  h3 {
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}

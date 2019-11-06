@@ -1,0 +1,113 @@
+.wrap {
+  padding-top: 32px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  box-sizing: border-box;
+  :global {
+    .card {
+      height: 112px;
+      line-height: 1;
+      border: 1px solid #f2f2f2;
+      box-sizing: border-box;
+      background: url("../images/card_bg.png") no-repeat;
+      background-size: 100%;
+      background-position: right bottom;
+      padding: 16px 23px;
+      cursor: pointer;
+      &:hover {
+        border-color: #4aacf7;
+      }
+      .title {
+        font-size: 16px;
+        color: #333;
+      }
+      .date {
+        color: #999999;
+        font-size: 12px;
+        margin-top: 16px;
+      }
+      .price {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 22px;
+      }
+    }
+  }
+}
+
+.pover {
+  min-height: 88px;
+  padding: 0 10px;
+  :global {
+    .spin {
+      width: 100%;
+      height: 100%;
+    }
+    h3 {
+      margin-top: 10px;
+    }
+    .flex {
+      width: 100%;
+      color: #333;
+      font-size: 14px;
+      line-height: 1.4;
+      height: 38px;
+      .num {
+        color: #999;
+        font-size: 14px;
+        margin-left: 13px;
+      }
+    }
+  }
+}
+
+.detail {
+  min-height: 400px;
+  padding-bottom: 32px;
+  position: relative;
+  :global {
+    .head {
+      line-height: 1;
+      margin-bottom: 30px;
+      h3 {
+        font-weight: bold;
+        margin-top: 0;
+      }
+      span {
+        color: #666;
+        cursor: pointer;
+      }
+    }
+    h3 {
+      font-size: 14px;
+      margin-top: 24px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+      li {
+        list-style: none;
+        line-height: 2;
+        .title {
+          color: #999;
+        }
+        .content {
+          color: #333;
+        }
+      }
+    }
+    .btn-group {
+      margin-top: 10px;
+      button {
+        margin-right: 10px;
+        padding: 0 40px;
+      }
+    }
+  }
+}

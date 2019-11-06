@@ -1,0 +1,137 @@
+@import "~themes/public";
+
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    position: relative;
+  }
+  .addBtn{
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    button{
+      margin-right: 24px;
+    }
+  }
+
+  .addTable{
+    padding:0 32px;
+  }
+  #del{
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+      background: #4AACF7;
+      color: #fff;
+    }
+  }
+  .zl_adjustment_foot{
+    margin-left: 32px;
+    margin-top: 32px;
+    font-size: 14px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+
+    span{
+      color:#000!important;
+    }
+  }
+  .zl_Store{
+    height: 64px;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background-color: #fff;
+    label {
+      float: left;
+      margin-left: 63px;
+      line-height: 64px;
+      font-size: 12px;
+      font-family:MicrosoftYaHei;
+      color:rgba(51,51,51,1);
+      input {
+          height: 40px;
+          width: 400px;
+          border: 1px solid  rgba(242,242,242,1);
+          margin-top: 12px;
+      }
+    }
+    div:nth-child(2) {
+      float: right;
+      margin-right: 300px;
+      height: 64px;
+      font-family:MicrosoftYaHei;
+      color:rgba(51,51,51,1);
+      div{
+        height: 64px;
+        line-height: 64px;
+        span{
+          margin-right: 12px;
+          margin-right: 20px;
+        }
+        button{
+          text-align: center;
+          vertical-align: middle;
+          padding-right: 0!important;
+          // span{
+          //  width: 0;
+          // }
+        }
+      }
+    }
+  }
+
+  .zl_mast{
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10000;
+  }
+  .zl_mast_content{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 542px;
+    background: #fff;
+    padding:32px;
+    box-sizing: border-box;
+    .zl_tableBox{
+      height: 420px;
+      width: 846px;
+      overflow-y:auto;
+    }
+    p{
+      font-size:16px;
+      font-family:MicrosoftYaHei-Bold;
+      font-weight:bold;
+      height: 16px;
+      color:rgba(51,51,51,1);
+      margin-bottom: 42px;
+      span{
+        font-size: 16px;
+        float: right;
+        color:rgba(191,191,191,1);
+        cursor: pointer;
+      }
+    }
+  }
+  .zl_button{
+    // float: right;
+    margin-top: 32px;
+    position: absolute;
+    right: 32px;
+    margin-left: 32px;
+  }
